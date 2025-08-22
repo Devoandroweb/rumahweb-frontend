@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front New Rumahweb</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+
+<body class="font-sans" style="padding: 2px;">
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 w-full border-b bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+        <div class="container flex h-16 items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <a class="flex items-center space-x-2" title="Rumahweb Indonesia" href="/">
+                    <img src="img/rumahweb-logo.svg" alt="Rumahweb Indonesia" class="h-10 w-auto">
+                </a>
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-6">
+                <!-- Domain Mega Menu -->
+                <div class="relative group mega-menu-trigger">
+                    <button class="text-base font-bold hover:text-blue-900 transition-colors flex items-center gap-1">
+                        Domain
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 opacity-70 transition-transform">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </button>
+                    <div class="fixed left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-blue-100 p-6 transition-all duration-300 z-50 mega-menu-container hidden" style="top: 64px;">
+                        <div class="container mx-auto">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <!-- Info Domain -->
+                                <div>
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-4">DOMAIN</h3>
+                                    <p class="text-gray-600">
+                                        Memiliki nama domain sangat penting sebagai branding digital, meningkatkan kepercayaan pelanggan, dan mendorong trafik bisnis. Daftarkan nama bisnis dan ide terbaik Anda sekarang!
+                                    </p>
+                                </div>
+                                <!-- Menu Domain -->
+                                <div class="space-y-6">
+                                    <div class="flex gap-3">
+                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                                            <img alt="Domain Icon" width="20" height="20" class="w-5 h-5" src="img/domain-icon.svg" style="filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
+                                        </div>
+                                        <div>
+                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="domain murah" href="/domain-murah.html">Beli Domain</a>
+                                            <p class="text-gray-600 mb-2 text-sm">Bawa bisnis Anda #NaikLevel dengan mendaftarkan domain sebagai branding online bisnis Anda</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                                            <img alt="Transfer Domain Icon" width="20" height="20" class="w-5 h-5" src="img/transfer-domain-icon.svg" style="filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
+                                        </div>
+                                        <div>
+                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Transfer Domain" href="https://www.rumahweb.com/transfer-domain/">Transfer Domain</a>
+                                            <p class="text-gray-600 mb-2 text-sm">Transfer domain Anda ke Rumahweb. Mudah dan cepat dengan fitur pengelolaan domain lengkap</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                                            <img alt="Link in Bio" width="20" height="20" class="w-5 h-5" src="img/link-in-bio.svg" style="filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
+                                        </div>
+                                        <div>
+                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Link in Bio" href="/microsite">Link Bio (gratis)</a>
+                                            <p class="text-gray-600 mb-2 text-sm">Link in Bio gratis untuk media sosial menggunakan nama domain sendiri. Lebih keren!</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                                            <img alt="Reseller Domain Icon" width="20" height="20" class="w-5 h-5" src="img/reseller-domain-icon.svg" style="filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
+                                        </div>
+                                        <div>
+                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Reseller Domain" href="https://www.digitalregistra.co.id">Reseller Domain</a>
+                                            <p class="text-gray-600 mb-2 text-sm">Bergabung sebagai reseller domain dan dapatkan penghasilan tanpa batas!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Promo Domain -->
+                                <div class="bg-blue-50 p-5 rounded-xl">
+                                    <h3 class="text-lg font-bold text-blue-600 mb-3">Promosi Domain</h3>
+                                    <div class="space-y-4">
+                                        <div class="bg-white p-4 rounded-lg shadow-sm border border-blue-100">
+                                            <div class="flex justify-between items-center mb-2">
+                                                <span class="text-lg font-bold text-blue-900">.ID</span>
+                                                <span class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded">HEMAT 0%</span>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-gray-500 text-sm line-through">Rp 219.000</span>
+                                                <span class="text-blue-600 font-bold">Rp 219.000/tahun</span>
+                                            </div>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg shadow-sm border border-blue-100">
+                                            <div class="flex justify-between items-center mb-2">
+                                                <span class="text-lg font-bold text-blue-900">.COM</span>
+                                                <span class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded">HEMAT 34%</span>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-gray-500 text-sm line-through">Rp 190.000</span>
+                                                <span class="text-blue-600 font-bold">Rp 125.000/tahun</span>
+                                            </div>
+                                        </div>
+                                        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 py-2 w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-cyan-600 hover:to-blue-600 text-white"></button>
+                                            Lihat Semua Promosi
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hosting Mega Menu -->
+                <div class="relative group mega-menu-trigger">
+                    <button class="text-base font-bold hover:text-blue-900 transition-colors flex items-center gap-1">
+                        Hosting
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 opacity-70 transition-transform">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </button>
+                    <div class="fixed left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-blue-100 p-6 transition-all duration-300 z-50 mega-menu-container hidden" style="top: 64px;">
+                        <div class="container mx-auto">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <!-- Info Hosting -->
+                                <div>
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-4">HOSTING</h3>
+                                    <p class="text-gray-600">
+                                        Web hosting adalah layanan untuk menyimpan website, email, dan aplikasi Anda di server yang selalu online agar dapat diakses kapan saja dan dari mana saja. Rumahweb menawarkan solusi lengkap mulai dari shared, cloud hosting, VPS, hingga dedicated server.
+                                    </p>
+                                </div>
+                                <!-- Menu Hosting -->
+                                <div class="space-y-6">
+                                    <!-- Shared Hosting -->
+                                    <div class="flex gap-3">
+                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-server h-5 w-5 text-blue-500">
+                                                <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                                                <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                                                <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                                                <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="flex items-center gap-2">
+                                                <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Hosting Murah" href="/hosting-murah">Shared Hosting</a>
+                                                <span class="bg-gradient-to-r from-yellow-500 to-amber-500 text-white text-xs font-normal px-1.5 py-0.5 rounded-full">PROMO</span>
+                                            </div>
+                                            <p class="text-gray-600 mb-2 text-sm">
+                                                Hosting Indonesia terbaik dengan performa tinggi dan harga terjangkau untuk website personal dan bisnis
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Cloud Hosting -->
+                                    <div class="flex gap-3">
+                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud h-5 w-5 text-blue-500">
+                                                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="flex items-center gap-2">
+                                                <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Cloud Hosting" href="/cloud-hosting">Cloud Hosting</a>
+                                                <span class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-xs font-normal px-1.5 py-0.5 rounded-full">POWERFUL</span>
+                                            </div>
+                                            <p class="text-gray-600 mb-2 text-sm">
+                                                Hosting dengan dedicated resource untuk website dengan traffic tinggi dan aplikasi yang membutuhkan performa maksimal
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- WordPress Hosting -->
+                                    <div class="flex gap-3">
+                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500">
+                                                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"></path>
+                                                <path d="M12 2a10 10 0 0 1 10 10"></path>
+                                                <path d="M12 12v-2"></path>
+                                                <path d="M12 12h2"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="flex items-center gap-2">
+                                                <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="WordPress Hosting" href="https://www.rumahweb.com/wordpress-hosting/">WordPress Hosting</a>
+                                                <span class="bg-gradient-to-r from-green-500 to-teal-500 text-white text-xs font-normal px-1.5 py-0.5 rounded-full">EASY</span>
+                                            </div>
+                                            <p class="text-gray-600 mb-2 text-sm">
+                                                Hosting yang dioptimalkan khusus untuk WordPress dengan performa dan keamanan terbaik
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Menu VPS & Dedicated -->
+                                <div class="space-y-6">
+                                    <!-- VPS -->
+                                    <div class="flex gap-3">
+                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hard-drive h-5 w-5 text-blue-500">
+                                                <line x1="22" x2="2" y1="12" y2="12"></line>
+                                                <path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
+                                                <line x1="6" x2="6.01" y1="16" y2="16"></line>
+                                                <line x1="10" x2="10.01" y1="16" y2="16"></line>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="flex items-center gap-2">
+                                                <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="VPS Murah" href="https://www.rumahweb.com/vps-murah/">VPS</a>
+                                                <span class="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-xs font-normal px-1.5 py-0.5 rounded-full">BEST SELLER</span>
+                                            </div>
+                                            <p class="text-gray-600 mb-2 text-sm">
+                                                Server virtual dengan performa tinggi dan akses root penuh untuk kebutuhan aplikasi yang lebih kompleks
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- VPS Alibaba -->
+                                    <div class="flex gap-3">
+                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud h-5 w-5 text-blue-500">
+                                                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="VPS Alibaba" href="https://www.rumahweb.com/vps-alibaba-cloud/">VPS Alibaba</a>
+                                            <p class="text-gray-600 mb-2 text-sm">
+                                                VPS dengan infrastruktur Alibaba Cloud yang handal, stabil, dan tersedia di berbagai region
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Dedicated Server -->
+                                    <div class="flex gap-3">
+                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-server h-5 w-5 text-blue-500">
+                                                <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                                                <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                                                <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                                                <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Dedicated Server" href="https://www.rumahweb.com/dedicated-server/">Dedicated Server</a>
+                                            <p class="text-gray-600 mb-2 text-sm">
+                                                Server fisik eksklusif dengan performa maksimal untuk aplikasi berat dan traffic tinggi
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Website Mega Menu -->
+                <div class="relative group mega-menu-trigger">
+                    <button class="text-base font-bold hover:text-blue-900 transition-colors flex items-center gap-1">
+                        Website
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 opacity-70 transition-transform">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </button>
+                    <div class="fixed left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-blue-100 p-6 transition-all duration-300 z-50 mega-menu-container hidden" style="top: 64px;">
+                        <div class="container mx-auto">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <!-- Info Website -->
+                                <div>
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-4">WEBSITE</h3>
+                                    <p class="text-gray-600">
+                                        Website adalah wajah bisnis Anda di dunia digital. Dengan website yang profesional, Anda dapat menjangkau pelanggan lebih luas, membangun kredibilitas, dan meningkatkan penjualan. Rumahweb menyediakan berbagai solusi pembuatan website yang sesuai dengan kebutuhan dan anggaran Anda.
+                                    </p>
+                                </div>
+                                <!-- Menu Website -->
+                                <div class="space-y-6">
+                                    <div class="flex gap-3">
+                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-5 w-5 text-blue-500">
+                                                <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path>
+                                                <path d="M20 3v4"></path>
+                                                <path d="M22 5h-4"></path>
+                                                <path d="M4 17v2"></path>
+                                                <path d="M5 18H3"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="AI Website Builder" href="/ai-website-builder">AI Website Builder</a>
+                                            <p class="text-gray-600 mb-2 text-sm">Buat website profesional dalam hitungan menit dengan bantuan AI pintar</p>
+                                            <a class="mt-4 inline-block w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-red-500 hover:to-orange-500 text-white font-semibold py-2.5 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-sm" title="Coba Buat Website dengan AI" href="https://www.rumahweb.com/ai-website-builder/">Coba Buat Website</a>
+                                        </div>
+                                    </div>
+                                    <div class="bg-blue-50 p-4 rounded-lg">
+                                        <h4 class="font-medium text-blue-700 mb-2">Keunggulan AI Website Builder</h4>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-green-500 mt-1">✓</span>
+                                                <span class="text-gray-600 text-sm">Buat website & konten dalam hitungan detik</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-green-500 mt-1">✓</span>
+                                                <span class="text-gray-600 text-sm">Desain profesional otomatis</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-green-500 mt-1">✓</span>
+                                                <span class="text-gray-600 text-sm">Tanpa perlu koding</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-green-500 mt-1">✓</span>
+                                                <span class="text-gray-600 text-sm">SEO-friendly</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Menu Lain Website -->
+                                <div class="space-y-6">
+                                    <div class="flex gap-3">
+                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paintbrush h-5 w-5 text-blue-500">
+                                                <path d="m14.622 17.897-10.68-2.913"></path>
+                                                <path d="M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z"></path>
+                                                <path d="M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Website Builder" href="https://www.rumahweb.com/website-builder/">Website Builder</a>
+                                            <p class="text-gray-600 mb-2 text-sm">Membuat website dengan drag and drop. Pilih desain dan ekspresikan dirimu</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500">
+                                                <path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7"></path>
+                                                <rect width="20" height="5" x="2" y="2" rx="1"></rect>
+                                                <path d="M12 12v5"></path>
+                                                <path d="M10 14h4"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Jasa Pembuatan Website" href="https://www.rumahweb.com/jasa-pembuatan-website/">Jasa Pembuatan Website</a>
+                                            <p class="text-gray-600 mb-2 text-sm">Desain website profesional oleh tim Rumahweb untuk bisnis Anda</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500">
+                                                <path d="m3 16 4 4 4-4"></path>
+                                                <path d="M7 20V4"></path>
+                                                <rect width="4" height="6" x="15" y="4" rx="2"></rect>
+                                                <rect width="4" height="6" x="15" y="14" rx="2"></rect>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Ranking Coach" href="https://www.rumahweb.com/rankingcoach/">Ranking Coach</a>
+                                            <p class="text-gray-600 mb-2 text-sm">Tingkatkan peringkat website Anda di mesin pencari Google</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield h-5 w-5 text-blue-500">
+                                                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Website Security (SSL)" href="https://www.rumahweb.com/ssl-murah/">Website Security (SSL)</a>
+                                            <p class="text-gray-600 mb-2 text-sm">Amankan website dan data pelanggan Anda dengan sertifikat SSL</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Semua Layanan Mega Menu -->
+                <div class="relative group mega-menu-trigger">
+                    <button class="text-base font-bold hover:text-blue-900 transition-colors flex items-center gap-1">
+                        Semua Layanan
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 opacity-70 transition-transform">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </button>
+                    <div class="fixed left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-blue-100 p-6 transition-all duration-300 z-50 mega-menu-container hidden" style="top: 64px;">
+                        <!-- ... (content unchanged for brevity) ... -->
+                    </div>
+                </div>
+                <a class="text-base font-bold text-white bg-gradient-to-r from-orange-500 to-red-500 hover:from-red-500 hover:to-orange-500 px-4 py-2 rounded-full flex items-center transition-all duration-300 shadow-sm hover:shadow-md" href="/promosi">
+                    Promo
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gift ml-1 h-4 w-4 text-white">
+                        <rect x="3" y="8" width="18" height="4" rx="1"></rect>
+                        <path d="M12 8v13"></path>
+                        <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path>
+                        <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path>
+                    </svg>
+                </a>
+            </nav>
+            <!-- Right Actions -->
+            <div class="flex items-center gap-4">
+                <a class="text-sm font-bold hover:text-blue-900 transition-colors hidden sm:block flex items-center gap-1" title="Support Rumahweb" href=".html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones h-4 w-4">
+                        <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
+                    </svg>
+                    Support
+                </a>
+                <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-blue-600 hover:bg-blue-700 text-white transition-colors text-sm font-bold px-4 py-2 rounded-md h-auto">
+                    <a href="https://new.clientzone.rumahweb.com/login">LOGIN</a>
+                </button>
+                <button class="md:hidden text-slate-600 hover:text-blue-900 transition-colors" aria-label="Toggle mobile menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x hidden">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu (unchanged for brevity) -->
+        <div class="md:hidden bg-white border-t mobile-menu hidden">
+            <!-- ... (content unchanged for brevity) ... -->
+        </div>
+    </header>
+    <section class="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-br from-blue-200 to-blue-100">
+        <div class="container mx-auto px-4 md:px-6 text-center ">
+            <h1 class="mb-4 text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl bg-gradient-to-r from-fuchsia-500 via-red-500 to-orange-400 bg-clip-text text-transparent">
+                Domain Murah bikin Idemu jadi Petjah!
+            </h1>
+            <h2 class="text-4xl font-bold tracking-tight text-gradient-blue-to-blue-light sm:text-5xl md:text-6xl px-0 my-2 ">
+                Daftarkan Domainmu Sekarang!
+            </h2>
+            <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-900 sm:text-xl">
+                Punya ide jangan mager. Segera daftarkan domain untuk ide kamu. Cobain juga fitur AI domain generator untuk ide-ide nama domain keren buat bisnismu.
+            </p>
+            <div class="max-w-2xl mx-auto mt-10">
+                <div role="tablist" aria-orientation="horizontal" class="inline-flex h-auto items-center justify-center rounded-full bg-white -700 p-1.5 shadow-md py-1.5 my-0 text-muted-foreground leading-3" tabindex="0" style="outline:none">
+                    <button type="button" role="tab" aria-selected="true" aria-controls="tab-domain-search" data-state="active" id="tab-trigger-domain-search"
+                        class="tab-btn inline-flex items-center justify-center whitespace-nowrap rounded-full px-6 py-2.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:to-sky-600 data-[state=active]:text-white data-[state=active]:shadow-sm text-slate-500 hover:text-slate-700 "
+                        tabindex="-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search w-4 h-4 mr-2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.3-4.3"></path>
+                        </svg>
+                        Pencarian Domain
+                    </button>
+                    <button type="button" role="tab" aria-selected="false" aria-controls="tab-ai-generator" data-state="inactive" id="tab-trigger-ai-generator"
+                        class="tab-btn inline-flex items-center justify-center whitespace-nowrap rounded-full px-6 py-2.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-slate-500 hover:text-slate-700"
+                        tabindex="-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-4 h-4 mr-2 text-yellow-500">
+                            <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path>
+                            <path d="M20 3v4"></path>
+                            <path d="M22 5h-4"></path>
+                            <path d="M4 17v2"></path>
+                            <path d="M5 18H3"></path>
+                        </svg>
+                        AI Domain Generator
+                    </button>
+                </div>
+                <div role="tabpanel" aria-labelledby="tab-trigger-domain-search" id="tab-domain-search" tabindex="0" class="mt-6 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                    <form class="w-full">
+                        <div class="relative flex items-center w-full bg-white rounded-lg shadow-md border border-slate-400 focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400 pointer-events-none">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.3-4.3"></path>
+                            </svg>
+                            <input type="text" class="flex border border-input bg-background px-3 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm pl-10 pr-32 sm:pr-36 py-3 text-base w-full rounded-lg border-none focus:ring-0 focus:border-primary focus:ring-blue-500 h-14 pt-3"
+                                placeholder="Masukkan nama domain yang kamu inginkan.." value="">
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 rounded-md absolute right-3 top-1/2 -translate-y-1/2 h-10 px-6 sm:px-8 bg-gradient-to-r from-yellow-400 to-[#F9B427] hover:from-[#F9B427] hover:to-yellow-400 text-slate-800 font-semibold transition-all duration-300 text-base shadow-md hover:shadow-lg z-10"
+                                type="submit">Cari</button>
+                        </div>
+                    </form>
+                    <p class="mt-2 text-sm text-left text-slate-500">
+                        Sudah punya domain?
+                        <a href="https://www.rumahweb.com/transfer-domain/" class="font-bold text-blue-900 hover:underline " target="_blank" rel="noopener noreferrer">Transfer ke Rumahweb.</a>
+                    </p>
+                </div>
+                <div role="tabpanel" aria-labelledby="tab-trigger-ai-generator" id="tab-ai-generator" tabindex="0" class="mt-6 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" hidden>
+                    <form class="flex flex-col w-full items-center gap-4">
+                        <textarea
+                            placeholder="Jelaskan bisnis atau ide Anda, contoh: 'Toko bunga online di Jakarta dengan pengiriman cepat'..."
+                            class="w-full min-h-[100px] p-3 rounded-md border border-slate-300 bg-white focus:ring-primary focus:border-primary"
+                        ></textarea>
+                        <button
+                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 rounded-md w-full sm:w-auto h-12 bg-gradient-to-r from-accent to-gold-600 hover:from-gold-600 hover:to-accent text-slate-800 font-semibold transition-all duration-300 text-base shadow-md hover:shadow-lg px-8 bg-gradient-to-r from-yellow-400 to-[#F9B427] hover:from-[#F9B427] hover:to-yellow-400 text-slate-800 font-semibold transition-all duration-300 text-base shadow-md hover:shadow-lg z-10"
+                            type="submit"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-4 h-4 mr-2 text-slate-800">
+                                <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path>
+                                <path d="M20 3v4"></path>
+                                <path d="M22 5h-4"></path>
+                                <path d="M4 17v2"></path>
+                                <path d="M5 18H3"></path>
+                            </svg>
+                            Carikan Ide
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+                <!-- .COM -->
+                <div class="bg-white rounded-lg shadow-lg border border-[#dfebfe] p-4 h-full flex flex-col justify-between text-left">
+                    <div>
+                        <div class="flex items-center justify-between mb-2 h-8">
+                            <img src="https://img.rwbcdn.net/img/w/com-min.svg" alt=".com domain logo" class="h-5">
+                            <span class="bg-gradient-to-r from-blue-500 to-blue-700 text-white text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded-md">PROMO</span>
+                        </div>
+                        <p class="text-slate-600 text-sm sm:text-base mb-2 min-h-[40px] sm:min-h-[48px]">
+                            Ekstensi nama domain paling populer di dunia.
+                        </p>
+                    </div>
+                    <div class="flex items-baseline gap-2 mt-auto">
+                        <p class="text-slate-800 text-2xl sm:text-3xl font-semibold">Rp 125.000,-</p>
+                        <p class="text-slate-400 text-base sm:text-lg font-normal line-through">165.000,-</p>
+                    </div>
+                </div>
+                <div class="bg-white -700 rounded-lg shadow-lg border border-[#dfebfe] p-4 h-full flex flex-col justify-between text-left">
+                    <div>
+                        <div class="flex items-center justify-between mb-2 h-8">
+                            <img src="https://img.rwbcdn.net/img/w/logo-id.svg" alt=".id domain logo" class="h-5">
+                        </div>
+                        <p class="text-slate-600 text-sm sm:text-base mb-2 min-h-[40px] sm:min-h-[48px]">
+                            Domain identitas Indonesia, tunjukkan eksistensi lokal Anda.
+                        </p>
+                    </div>
+                    <div class="flex items-baseline gap-2 mt-auto">
+                        <p class="text-slate-800 text-2xl sm:text-3xl font-semibold">Rp 225.000,-</p>
+                    </div>
+                </div>
+                <div class="bg-white -700 rounded-lg shadow-lg border border-[#dfebfe] p-4 h-full flex flex-col justify-between text-left">
+                    <div>
+                        <div class="flex items-center justify-between mb-2 h-8">
+                            <img src="https://img.rwbcdn.net/img/w/net-min.svg" alt=".co.id domain logo (using .net image)" class="h-5">
+                            <span class="bg-gradient-to-r from-blue-500 to-blue-700 text-white text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded-md">PROMO</span>
+                        </div>
+                        <p class="text-slate-600 text-sm sm:text-base mb-2 min-h-[40px] sm:min-h-[48px]">
+                            Untuk bisnis dan korporasi terpercaya di Indonesia.
+                        </p>
+                    </div>
+                    <div class="flex items-baseline gap-2 mt-auto">
+                        <p class="text-slate-800 text-2xl sm:text-3xl font-semibold">Rp 250.000,-</p>
+                        <p class="text-slate-400 text-base sm:text-lg font-normal line-through">275.000,-</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 max-w-5xl mx-auto">
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <div class="bg-white/30 backdrop-blur-md rounded-lg p-4 text-center shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-white/40">
+                        <p class="text-xl font-bold text-blue-900 ">.ONLINE</p>
+                        <p class="text-md text-slate-600 mt-1">Rp 27.000</p>
+                    </div>
+                    <div class="bg-white/30 backdrop-blur-md rounded-lg p-4 text-center shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-white/40">
+                        <p class="text-xl font-bold text-blue-900 ">.ASIA</p>
+                        <p class="text-md text-slate-600 mt-1">Rp 25.000</p>
+                    </div>
+                    <div class="bg-white/30 backdrop-blur-md rounded-lg p-4 text-center shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-white/40">
+                        <p class="text-xl font-bold text-blue-900 ">.XYZ</p>
+                        <p class="text-md text-slate-600 mt-1">Rp 27.000</p>
+                    </div>
+                    <div class="bg-white/30 backdrop-blur-md rounded-lg p-4 text-center shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-white/40">
+                        <p class="text-xl font-bold text-blue-900 ">.SITE</p>
+                        <p class="text-md text-slate-600 mt-1">Rp 27.000</p>
+                    </div>
+                    <div class="bg-white/30 backdrop-blur-md rounded-lg p-4 text-center shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-white/40">
+                        <p class="text-xl font-bold text-blue-900 ">.CLOUD</p>
+                        <p class="text-md text-slate-600 mt-1">Rp 27.000</p>
+                    </div>
+                    <div class="bg-white/30 backdrop-blur-md rounded-lg p-4 text-center shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-white/40">
+                        <p class="text-xl font-bold text-blue-900 ">.STORE</p>
+                        <p class="text-md text-slate-600 mt-1">Rp 47.000</p>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-16 text-sm text-slate-500 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert w-4 h-4 mr-1.5 text-blue-900">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" x2="12" y1="8" y2="12"></line>
+                    <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                </svg>
+                Gratis proteksi privasi WHOIS untuk setiap registrasi domain yang memenuhi syarat.
+            </p>
+        </div>
+    </section>
+    <section class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-10 md:mb-12">
+                <h2 class="section-title font-bold md:text-[3rem]">Pilih Domain Keren Anda</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    Dapatkan harga spesial untuk domain-domain unggulan kami. Awali online presence Anda dengan domain murah dari Rumahweb.
+                </p>
+            </div>
+            <div class="flex justify-center mb-8">
+                <div class="inline-flex items-center p-1.5 bg-white rounded-full shadow-md border border-slate-200 space-x-1.5">
+                    <button class="btn-domain inline-flex items-center justify-center whitespace-nowrap rounded-full px-6 py-3 text-slate-600 font-medium ring-offset-background transition-all duration-300 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-r from-[#1E40AF] to-cyan-600 text-white shadow-sm" data-active="true" aria-controls="domain-promo">Promo</button>
+                    <button class="btn-domain inline-flex items-center justify-center whitespace-nowrap rounded-full px-6 py-3 text-slate-600 font-medium ring-offset-background transition-all duration-300 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-slate-400 hover:text-slate-500 hover:bg-gray-50" data-active="false" aria-controls="domain-populer">Populer</button>
+                    <a href="https://order.rumahweb.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center whitespace-nowrap rounded-full px-6 py-3 text-slate-600 font-medium ring-offset-background transition-all duration-300 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-slate-400 hover:text-slate-500 hover:bg-gray-50" aria-label="Lihat semua domain di halaman pemesanan (buka di tab baru)">
+                        All
+                        <svg class="ml-1.5 h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div id="domain-promo" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- .xyz -->
+                <div class="border border-gray-200 rounded-xl p-6 flex flex-col h-full shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl font-bold text-purple-600 mb-3">.xyz</div>
+                    <p class="text-sm text-slate-600 mb-4 min-h-[40px]">Domain modern, kreatif, dan serbaguna untuk semua.</p>
+                    <div class="flex items-center mb-1">
+                        <span class="text-sm text-slate-500 line-through mr-2">Rp 150.000</span>
+                        <span class="inline-block px-2 py-0.5 text-xs font-semibold rounded-md bg-purple-100 text-purple-700">HEMAT 93%</span>
+                    </div>
+                    <div class="flex items-end mb-6">
+                        <span class="text-slate-500 text-2xl mr-0.5">Rp</span>
+                        <span class="text-5xl font-extrabold text-slate-800 leading-none">10.000</span>
+                        <span class="text-slate-500 text-lg self-end ml-1">/tahun</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-help text-slate-400 ml-1 self-end mb-1 cursor-pointer" title="Harga berlaku untuk tahun pertama.">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <path d="M12 17h.01"></path>
+                        </svg>
+                    </div>
+                    <div class="mt-auto">
+                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full text-white bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 py-3 text-base transition-all duration-300" href="/#register-xyz">Daftar</a>
+                    </div>
+                </div>
+                <!-- .online -->
+                <div class="border border-gray-200 rounded-xl p-6 flex flex-col h-full shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl font-bold text-sky-500 mb-3">.online</div>
+                    <p class="text-sm text-slate-600 mb-4 min-h-[40px]">Sempurna untuk bisnis dan kehadiran digital Anda.</p>
+                    <div class="flex items-center mb-1">
+                        <span class="text-sm text-slate-500 line-through mr-2">Rp 450.000</span>
+                        <span class="inline-block px-2 py-0.5 text-xs font-semibold rounded-md bg-purple-100 text-purple-700">HEMAT 98%</span>
+                    </div>
+                    <div class="flex items-end mb-6">
+                        <span class="text-slate-500 text-2xl mr-0.5">Rp</span>
+                        <span class="text-5xl font-extrabold text-slate-800 leading-none">9.000</span>
+                        <span class="text-slate-500 text-lg self-end ml-1">/tahun</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-help text-slate-400 ml-1 self-end mb-1 cursor-pointer" title="Harga berlaku untuk tahun pertama.">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <path d="M12 17h.01"></path>
+                        </svg>
+                    </div>
+                    <div class="mt-auto">
+                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full text-white bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 py-3 text-base transition-all duration-300" href="/#register-online">Daftar</a>
+                    </div>
+                </div>
+                <!-- .store -->
+                <div class="border border-gray-200 rounded-xl p-6 flex flex-col h-full shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl font-bold text-orange-500 mb-3">.store</div>
+                    <p class="text-sm text-slate-600 mb-4 min-h-[40px]">Pilihan ideal untuk toko online dan e-commerce.</p>
+                    <div class="flex items-center mb-1">
+                        <span class="text-sm text-slate-500 line-through mr-2">Rp 750.000</span>
+                        <span class="inline-block px-2 py-0.5 text-xs font-semibold rounded-md bg-purple-100 text-purple-700">HEMAT 99%</span>
+                    </div>
+                    <div class="flex items-end mb-6">
+                        <span class="text-slate-500 text-2xl mr-0.5">Rp</span>
+                        <span class="text-5xl font-extrabold text-slate-800 leading-none">7.500</span>
+                        <span class="text-slate-500 text-lg self-end ml-1">/tahun</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-help text-slate-400 ml-1 self-end mb-1 cursor-pointer" title="Harga berlaku untuk tahun pertama.">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <path d="M12 17h.01"></path>
+                        </svg>
+                    </div>
+                    <div class="mt-auto">
+                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full text-white bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 py-3 text-base transition-all duration-300" href="/#register-store">Daftar</a>
+                    </div>
+                </div>
+                <!-- .tech -->
+                <div class="border border-gray-200 rounded-xl p-6 flex flex-col h-full shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl font-bold text-indigo-600 mb-3">.tech</div>
+                    <p class="text-sm text-slate-600 mb-4 min-h-[40px]">Domain untuk inovasi, startup, dan teknologi.</p>
+                    <div class="flex items-center mb-1">
+                        <span class="text-sm text-slate-500 line-through mr-2">Rp 675.000</span>
+                        <span class="inline-block px-2 py-0.5 text-xs font-semibold rounded-md bg-purple-100 text-purple-700">HEMAT 97%</span>
+                    </div>
+                    <div class="flex items-end mb-6">
+                        <span class="text-slate-500 text-2xl mr-0.5">Rp</span>
+                        <span class="text-5xl font-extrabold text-slate-800 leading-none">20.000</span>
+                        <span class="text-slate-500 text-lg self-end ml-1">/tahun</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-help text-slate-400 ml-1 self-end mb-1 cursor-pointer" title="Harga berlaku untuk tahun pertama.">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <path d="M12 17h.01"></path>
+                        </svg>
+                    </div>
+                    <div class="mt-auto">
+                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full text-white bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 py-3 text-base transition-all duration-300" href="/#register-tech">Daftar</a>
+                    </div>
+                </div>
+                <!-- .website -->
+                <div class="border border-gray-200 rounded-xl p-6 flex flex-col h-full shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl font-bold text-teal-500 mb-3">.website</div>
+                    <p class="text-sm text-slate-600 mb-4 min-h-[40px]">Jelas dan lugas, cocok untuk semua jenis website.</p>
+                    <div class="flex items-center mb-1">
+                        <span class="text-sm text-slate-500 line-through mr-2">Rp 300.000</span>
+                        <span class="inline-block px-2 py-0.5 text-xs font-semibold rounded-md bg-purple-100 text-purple-700">HEMAT 90%</span>
+                    </div>
+                    <div class="flex items-end mb-6">
+                        <span class="text-slate-500 text-2xl mr-0.5">Rp</span>
+                        <span class="text-5xl font-extrabold text-slate-800 leading-none">30.000</span>
+                        <span class="text-slate-500 text-lg self-end ml-1">/tahun</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-help text-slate-400 ml-1 self-end mb-1 cursor-pointer" title="Harga berlaku untuk tahun pertama.">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <path d="M12 17h.01"></path>
+                        </svg>
+                    </div>
+                    <div class="mt-auto">
+                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full text-white bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 py-3 text-base transition-all duration-300" href="/#register-website">Daftar</a>
+                    </div>
+                </div>
+            </div>
+            <div id="domain-populer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" hidden>
+                <!-- .com -->
+                <div class="border border-gray-200 rounded-xl p-6 flex flex-col h-full shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl font-bold text-blue-600 mb-3">.com</div>
+                    <p class="text-sm text-slate-600 mb-4 min-h-[40px]">Domain paling populer dan dikenal di seluruh dunia.</p>
+                    <div class="flex items-center mb-1">
+                        <span class="text-sm text-slate-500 line-through mr-2">Rp 185.000</span>
+                        <span class="inline-block px-2 py-0.5 text-xs font-semibold rounded-md bg-purple-100 text-purple-700">HEMAT 32%</span>
+                    </div>
+                    <div class="flex items-end mb-6">
+                        <span class="text-slate-500 text-2xl mr-0.5">Rp</span>
+                        <span class="text-5xl font-extrabold text-slate-800 leading-none">125.000</span>
+                        <span class="text-slate-500 text-lg self-end ml-1">/tahun</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-help text-slate-400 ml-1 self-end mb-1 cursor-pointer" title="Harga berlaku untuk tahun pertama.">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <path d="M12 17h.01"></path>
+                        </svg>
+                    </div>
+                    <div class="mt-auto">
+                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full text-white bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 py-3 text-base transition-all duration-300" href="/#register-com">Daftar</a>
+                    </div>
+                </div>
+                <!-- .id -->
+                <div class="border border-gray-200 rounded-xl p-6 flex flex-col h-full shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl font-bold text-red-600 mb-3">.id</div>
+                    <p class="text-sm text-slate-600 mb-4 min-h-[40px]">Identitas Indonesia, tingkatkan kepercayaan lokal.</p>
+                    <div class="flex items-center mb-1">
+                        <span class="text-sm text-slate-500 line-through mr-2">Rp 275.000</span>
+                        <span class="inline-block px-2 py-0.5 text-xs font-semibold rounded-md bg-purple-100 text-purple-700">HEMAT 9%</span>
+                    </div>
+                    <div class="flex items-end mb-6">
+                        <span class="text-slate-500 text-2xl mr-0.5">Rp</span>
+                        <span class="text-5xl font-extrabold text-slate-800 leading-none">250.000</span>
+                        <span class="text-slate-500 text-lg self-end ml-1">/tahun</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-help text-slate-400 ml-1 self-end mb-1 cursor-pointer" title="Harga berlaku untuk tahun pertama.">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <path d="M12 17h.01"></path>
+                        </svg>
+                    </div>
+                    <div class="mt-auto">
+                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full text-white bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 py-3 text-base transition-all duration-300" href="/#register-id">Daftar</a>
+                    </div>
+                </div>
+                <!-- .co.id -->
+                <div class="border border-gray-200 rounded-xl p-6 flex flex-col h-full shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl font-bold text-green-600 mb-3">.co.id</div>
+                    <p class="text-sm text-slate-600 mb-4 min-h-[40px]">Untuk perusahaan dan bisnis terpercaya di Indonesia.</p>
+                    <div class="flex items-center mb-1">
+                        <span class="text-sm text-slate-500 line-through mr-2">Rp 165.000</span>
+                        <span class="inline-block px-2 py-0.5 text-xs font-semibold rounded-md bg-purple-100 text-purple-700">HEMAT 0%</span>
+                    </div>
+                    <div class="flex items-end mb-6">
+                        <span class="text-slate-500 text-2xl mr-0.5">Rp</span>
+                        <span class="text-5xl font-extrabold text-slate-800 leading-none">165.000</span>
+                        <span class="text-slate-500 text-lg self-end ml-1">/tahun</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-help text-slate-400 ml-1 self-end mb-1 cursor-pointer" title="Harga berlaku untuk tahun pertama.">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <path d="M12 17h.01"></path>
+                        </svg>
+                    </div>
+                    <div class="mt-auto">
+                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full text-white bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 py-3 text-base transition-all duration-300" href="/#register-co-id">Daftar</a>
+                    </div>
+                </div>
+                <!-- .net -->
+                <div class="border border-gray-200 rounded-xl p-6 flex flex-col h-full shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl font-bold text-amber-600 mb-3">.net</div>
+                    <p class="text-sm text-slate-600 mb-4 min-h-[40px]">Alternatif klasik untuk jaringan dan teknologi.</p>
+                    <div class="flex items-center mb-1">
+                        <span class="text-sm text-slate-500 line-through mr-2">Rp 200.000</span>
+                        <span class="inline-block px-2 py-0.5 text-xs font-semibold rounded-md bg-purple-100 text-purple-700">HEMAT 25%</span>
+                    </div>
+                    <div class="flex items-end mb-6">
+                        <span class="text-slate-500 text-2xl mr-0.5">Rp</span>
+                        <span class="text-5xl font-extrabold text-slate-800 leading-none">150.000</span>
+                        <span class="text-slate-500 text-lg self-end ml-1">/tahun</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-help text-slate-400 ml-1 self-end mb-1 cursor-pointer" title="Harga berlaku untuk tahun pertama.">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <path d="M12 17h.01"></path>
+                        </svg>
+                    </div>
+                    <div class="mt-auto">
+                        <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 w-full text-white bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 py-3 text-base transition-all duration-300" href="/#register-net">Daftar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-12 md:py-16 bg-gradient-to-br from-sky-50 via-slate-50 to-blue-100">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center max-w-3xl mx-auto mb-10 md:mb-12">
+                <h2 class="text-3xl font-bold tracking-tight text-blue-900 sm:text-4xl mb-5">
+                    Mengapa Mendaftarkan Domain di Rumahweb?
+                </h2>
+                <p class="text-lg text-slate-700 leading-relaxed">
+                    Domain adalah sebuah investasi. Pastikan Anda mendaftarkannya di perusahaan yang terpercaya seperti Rumahweb. Sejak tahun 2002, kami telah mendaftarkan lebih dari 1.200.000 nama domain di Indonesia, diakui dengan akreditasi resmi dari ICANN dan PANDI.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col h-full">
+                        <div class="flex items-center mb-4">
+                            <img alt="ICANN Logo" loading="lazy" width="70" height="32" class="object-contain mr-3" src="/img/brands/icann-logo.svg">
+                            <h3 class="text-xl font-semibold text-blue-700">ICANN Accredited Registrar</h3>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-grow">
+                            Sejak tahun 2012, Rumahweb diakreditasi oleh ICANN (Internet Corporation for Assigned Names and Numbers), lembaga tertinggi yang meregulasi nama domain di tingkat dunia. Ini adalah jaminan kepercayaan dan standar global untuk domain Anda.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex flex-col h-full">
+                        <div class="flex items-center mb-4">
+                            <img alt="PANDI Logo" loading="lazy" width="60" height="32" class="object-contain mr-3" src="/img/brands/pandi-logo.svg">
+                            <h3 class="text-xl font-semibold text-red-700">PANDI Accredited Registrar</h3>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-grow">
+                            Sebagai Registrar domain .ID yang terakreditasi oleh PANDI (Pengelola Nama Domain Internet Indonesia), Rumahweb memiliki pangsa pasar terbesar dan dipercaya oleh ratusan merek ternama di Indonesia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-10 md:mb-12">
+                <h2 class="section-title font-bold text-[3rem]">Fitur Unggulan Domain</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    Dengan mendaftarkan domain di Rumahweb, Anda mendapatkan semua fitur yang dibutuhkan untuk bisa memiliki online presence secepatnya. Mulai dari microsite sederhana hingga email dengan nama domain. <br><strong>Domain murah - fitur mewah!</strong>
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Free Microsite -->
+                <div class="flex flex-col bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+                    <div class="relative w-full h-48 bg-gray-100 flex items-center justify-center">
+                        <img alt="Ilustrasi fitur Free Microsite" loading="lazy" width="200" height="150" class="w-full h-full object-cover" src="https://img.rwbcdn.net/img/tmp/dm-microsite.webp">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-500 mb-3 text-center">Free Microsite</h3>
+                        <p class="text-slate-600 text-base">
+                            Dapatkan microsite gratis seperti Linktree. Tampilkan banyak link penting Anda di satu halaman ringkas dan profesional, cocok untuk bio Instagram dan profil digital Anda.
+                        </p>
+                    </div>
+                </div>
+                <!-- Free Social Connect -->
+                <div class="flex flex-col bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+                    <div class="relative w-full h-48 bg-gray-100 flex items-center justify-center">
+                        <img alt="Ilustrasi fitur Free Social Connect" loading="lazy" width="200" height="150" class="w-full h-full object-cover" src="https://img.rwbcdn.net/img/tmp/dm-social.webp">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-500 mb-3 text-center">Free Social Connect</h3>
+                        <p class="text-slate-600 text-base">
+                            Tautkan domain ke akun media sosial Anda seperti Instagram, TikTok, WhatsApp, atau lainnya agar brand Anda tampil lebih profesional dan mudah diakses audiens.
+                        </p>
+                    </div>
+                </div>
+                <!-- Free Email (trial) -->
+                <div class="flex flex-col bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+                    <div class="relative w-full h-48 bg-gray-100 flex items-center justify-center">
+                        <img alt="Ilustrasi fitur Free Email (trial)" loading="lazy" width="200" height="150" class="w-full h-full object-cover" src="https://img.rwbcdn.net/img/tmp/dm-email.webp">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-500 mb-3 text-center">Free Email (trial)</h3>
+                        <p class="text-slate-600 text-base">
+                            Coba akun email bisnis gratis menggunakan @domain Anda. Tampil lebih profesional saat mengirim email ke klien, rekan, atau mitra. Langsung mengangkat citra profesional Anda.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Domain Manager -->
+                <div class="flex flex-col items-center text-center p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg h-full bg-[rgba(248,252,255,1)] border border-blue-200">
+                    <div class="p-3 bg-[#007bff1a] rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings w-8 h-8 text-blue-500">
+                            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2 text-rumahweb-blue-dark">Domain Manager</h4>
+                    <p class="text-slate-600 text-sm">Kelola seluruh domain Anda dengan mudah dari satu dashboard yang intuitif dan lengkap.</p>
+                </div>
+                <!-- Managed DNS -->
+                <div class="flex flex-col items-center text-center p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg h-full bg-[rgba(248,252,255,1)] border border-blue-200">
+                    <div class="p-3 bg-[#007bff1a] rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-network w-8 h-8 text-blue-500">
+                            <rect x="16" y="16" width="6" height="6" rx="1"></rect>
+                            <rect x="2" y="16" width="6" height="6" rx="1"></rect>
+                            <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                            <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
+                            <path d="M12 12V8"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2 text-rumahweb-blue-dark">Managed DNS</h4>
+                    <p class="text-slate-600 text-sm">Atur DNS domain Anda dengan cepat dan stabil lewat panel yang andal dan mudah digunakan.</p>
+                </div>
+                <!-- Domain Protection -->
+                <div class="flex flex-col items-center text-center p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg h-full bg-[rgba(248,252,255,1)] border border-blue-200">
+                    <div class="p-3 bg-[#007bff1a] rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock w-8 h-8 text-blue-500">
+                            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2 text-rumahweb-blue-dark">Domain Protection</h4>
+                    <p class="text-slate-600 text-sm">Cegah domain Anda dihapus atau ditransfer tanpa izin dengan fitur penguncian keamanan.</p>
+                </div>
+                <!-- Privacy Protection -->
+                <div class="flex flex-col items-center text-center p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg h-full bg-[rgba(248,252,255,1)] border border-blue-200">
+                    <div class="p-3 bg-[#007bff1a] rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-off w-8 h-8 text-blue-500">
+                            <path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"></path>
+                            <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"></path>
+                            <path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"></path>
+                            <path d="m2 2 20 20"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2 text-rumahweb-blue-dark">Privacy Protection</h4>
+                    <p class="text-slate-600 text-sm">Sembunyikan data pribadi dari WHOIS publik untuk menjaga privasi dan menghindari spam.</p>
+                </div>
+                <!-- DNSSEC Support -->
+                <div class="flex flex-col items-center text-center p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg h-full bg-[rgba(248,252,255,1)] border border-blue-200">
+                    <div class="p-3 bg-[#007bff1a] rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-alert w-8 h-8 text-blue-500">
+                            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                            <path d="M12 8v4"></path>
+                            <path d="M12 16h.01"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2 text-rumahweb-blue-dark">DNSSEC Support</h4>
+                    <p class="text-slate-600 text-sm">Tambahkan lapisan keamanan ekstra ke domain Anda agar terlindungi dari serangan DNS palsu.</p>
+                </div>
+                <!-- Forwarding -->
+                <div class="flex flex-col items-center text-center p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg h-full bg-[rgba(248,252,255,1)] border border-blue-200">
+                    <div class="p-3 bg-[#007bff1a] rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-right w-8 h-8 text-blue-500">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 12h8"></path>
+                            <path d="m12 16 4-4-4-4"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2 text-rumahweb-blue-dark">Forwarding</h4>
+                    <p class="text-slate-600 text-sm">Arahkan domain Anda ke website, media sosial, atau link lainnya secara instan tanpa perlu hosting tambahan.</p>
+                </div>
+                <!-- Contact Management -->
+                <div class="flex flex-col items-center text-center p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg h-full bg-[rgba(248,252,255,1)] border border-blue-200">
+                    <div class="p-3 bg-[#007bff1a] rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-check w-8 h-8 text-blue-500">
+                            <path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8"></path>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            <path d="m16 19 2 2 4-4"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2 text-rumahweb-blue-dark">Contact Management</h4>
+                    <p class="text-slate-600 text-sm">Amankan kontak Anda. Pesan masuk akan diteruskan lewat sistem anti-spam tanpa mengekspos email asli Anda.</p>
+                </div>
+                <!-- 24/7 Support -->
+                <div class="flex flex-col items-center text-center p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg h-full bg-[rgba(248,252,255,1)] border border-blue-200">
+                    <div class="p-3 bg-[#007bff1a] rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-life-buoy w-8 h-8 text-blue-500">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="m4.93 4.93 4.24 4.24"></path>
+                            <path d="m14.83 9.17 4.24-4.24"></path>
+                            <path d="m14.83 14.83 4.24 4.24"></path>
+                            <path d="m9.17 14.83-4.24 4.24"></path>
+                            <circle cx="12" cy="12" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2 text-rumahweb-blue-dark">24/7 Support</h4>
+                    <p class="text-slate-600 text-sm">Tim support kami siap membantu Anda kapan pun, termasuk malam hari dan hari libur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 lg:mb-16">
+                <h2 class="section-title font-bold text-[3rem]">Tips Memilih Nama Domain</h2>
+                <p class="mt-4 text-xl leading-8 text-slate-600 max-w-2xl mx-auto">
+                    Memilih nama domain tidak berbeda dengan memilih merek atau nama perusahaan. Butuh pertimbangan yang matang karena nama domain adalah identitas dan brand Anda di internet.
+                </p>
+            </div>
+            <div class="space-y-12 lg:space-y-20">
+                <!-- Hati-hati dengan Slang -->
+                <div class="flex flex-col gap-8 lg:gap-12 lg:flex-row items-center">
+                    <div class="lg:w-1/2">
+                        <div class="relative aspect-[4/3] w-full overflow-hidden">
+                            <img alt="Ilustrasi domain dengan slang yang membingungkan" loading="lazy" class="object-cover absolute inset-0 w-full h-full" src="https://img.rwbcdn.net/img/w/domain-murah/hati-hati-dengan-slang.avif">
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl font-semibold text-rumahweb-primary mb-3">Hati-hati dengan Slang</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Anda bisa saja menggunakan slang seperti 4 untuk for (misalkan: food4u.com - food for you dot com), namun bisa saja slang semacam ini disalahpahami saat diucapkan sehingga dipahami sebagai foodfooryou.com. Jika memang merek Anda menggunakan slang, ada baiknya Anda mendaftarkan semua kemungkinan yang bisa jadi disalahpahami orang, mendaftarkan foodforyou, food4u, food4you, dan kemungkinan-kemungkinan lain.
+                        </p>
+                    </div>
+                </div>
+                <!-- Lebih Pendek Lebih Baik -->
+                <div class="flex flex-col gap-8 lg:gap-12 lg:flex-row-reverse items-center">
+                    <div class="lg:w-1/2">
+                        <div class="relative aspect-[4/3] w-full overflow-hidden">
+                            <img alt="Ilustrasi nama domain pendek yang mudah diingat" loading="lazy" class="object-cover absolute inset-0 w-full h-full" src="https://img.rwbcdn.net/img/w/domain-murah/lebih-pendek-lebih-baik.avif">
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl font-semibold text-rumahweb-primary mb-3">Lebih Pendek Lebih Baik</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Domain yang lebih panjang dan kompleks membuat pelanggan Anda beresiko salah ketik. Seperti halnya merek, semakin pendek biasanya juga akan semakin mudah diingat. Branding yang berhasil adalah branding yang mudah diingat.
+                        </p>
+                    </div>
+                </div>
+                <!-- Gunakan Kata Kunci -->
+                <div class="flex flex-col gap-8 lg:gap-12 lg:flex-row items-center">
+                    <div class="lg:w-1/2">
+                        <div class="relative aspect-[4/3] w-full overflow-hidden">
+                            <img alt="Ilustrasi penggunaan kata kunci dalam domain" loading="lazy" class="object-cover absolute inset-0 w-full h-full" src="https://img.rwbcdn.net/img/w/domain-murah/gunakan-kata-kunci.avif">
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl font-semibold text-rumahweb-primary mb-3">Gunakan Kata Kunci</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Misalkan bisnis Anda bergerak di bidang jasa perbaikan mobil dengan nama perusahaan PT. Anugerah Jaya. Anda bisa saja menggunakan anugerahjaya.id, atau Anda juga bisa menggunakan domain servismobil.id atau mungkin montirpanggilan.com. Penggunaan kata kunci / keyword yang relevan juga akan meningkatkan peluang Anda pada search engine.
+                        </p>
+                    </div>
+                </div>
+                <!-- Hindari Merek Orang Lain -->
+                <div class="flex flex-col gap-8 lg:gap-12 lg:flex-row-reverse items-center">
+                    <div class="lg:w-1/2">
+                        <div class="relative aspect-[4/3] w-full overflow-hidden">
+                            <img alt="Ilustrasi larangan menggunakan merek orang lain pada domain" loading="lazy" class="object-cover absolute inset-0 w-full h-full" src="https://img.rwbcdn.net/img/w/domain-murah/hindari-merk-orang-lain.avif">
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl font-semibold text-rumahweb-primary mb-3">Hindari Merek Orang Lain</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Menggunakan merk yang bukan merk Anda pada domain dapat menimbulkan perselisihan dengan pemilik merk, bahkan bisa sampai di ranah hukum. Bisa saja Anda menjual sepatu merk Adidas, tapi jangan menggunakan jualadidas.net atau sepatuadidas.com karena pemilik merk Adidas bisa saja mengajukan keberatan dan mengambil alih domain tersebut melalui proses hukum.
+                        </p>
+                    </div>
+                </div>
+                <!-- Berikan Unsur Lokasi -->
+                <div class="flex flex-col gap-8 lg:gap-12 lg:flex-row items-center">
+                    <div class="lg:w-1/2">
+                        <div class="relative aspect-[4/3] w-full overflow-hidden">
+                            <img alt="Ilustrasi domain dengan unsur lokasi" loading="lazy" class="object-cover absolute inset-0 w-full h-full" src="https://img.rwbcdn.net/img/w/domain-murah/berikan-unsur-lokasi.avif">
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl font-semibold text-rumahweb-primary mb-3">Berikan Unsur Lokasi</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Nama domain bisa saja menggunakan unsur lokasi usaha untuk menguatkan local search. Misalkan: parceljogja.co.id atau tukangcatjakarta.com.
+                        </p>
+                    </div>
+                </div>
+                <!-- Pilih Ekstensi yang Sesuai -->
+                <div class="flex flex-col gap-8 lg:gap-12 lg:flex-row-reverse items-center">
+                    <div class="lg:w-1/2">
+                        <div class="relative aspect-[4/3] w-full overflow-hidden">
+                            <img alt="Ilustrasi berbagai ekstensi domain" loading="lazy" class="object-cover absolute inset-0 w-full h-full" src="https://img.rwbcdn.net/img/w/domain-murah/pilih-ekstensi-yang-sesuai.avif">
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl font-semibold text-rumahweb-primary mb-3">Pilih Ekstensi yang Sesuai</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Ekstensi .com dan .id di Indonesia sangat populer, tak heran jika nama domain yang Anda pilih ternyata telah menjadi milik orang lain. Namun kini tersedia ratusan ekstensi yang sesuai dengan bidang bisnis, seperti .design, .art, .photography, .shop, dan masih banyak lagi.
+                        </p>
+                    </div>
+                </div>
+                <!-- Proteksi Merk Anda -->
+                <div class="flex flex-col gap-8 lg:gap-12 lg:flex-row items-center">
+                    <div class="lg:w-1/2">
+                        <div class="relative aspect-[4/3] w-full overflow-hidden">
+                            <img alt="Ilustrasi proteksi merek dengan beberapa ekstensi domain" loading="lazy" class="object-cover absolute inset-0 w-full h-full" src="https://img.rwbcdn.net/img/w/domain-murah/proteksi-merk-anda.avif">
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl font-semibold text-rumahweb-primary mb-3">Proteksi Merk Anda</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Pertimbangkan membeli beberapa ekstensi domain yang populer untuk merek Anda, misalkan namausaha.com, namausaha.net, dan namausaha.id sekaligus. Ini untuk mencegah kompetitor mendaftarkan versi lain dari domain Anda dan memastikan pelanggan menuju ke website yang memang milik Anda.
+                        </p>
+                    </div>
+                </div>
+                <!-- Cepat Bertindak -->
+                <div class="flex flex-col gap-8 lg:gap-12 lg:flex-row-reverse items-center">
+                    <div class="lg:w-1/2">
+                        <div class="relative aspect-[4/3] w-full overflow-hidden">
+                            <img alt="Ilustrasi tindakan cepat mendaftarkan domain" loading="lazy" class="object-cover absolute inset-0 w-full h-full" src="https://img.rwbcdn.net/img/w/domain-murah/cepat-bertindak.avif">
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl font-semibold text-rumahweb-primary mb-3">Cepat Bertindak</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Daftarkan nama domain Anda sesegera mungkin, jangan menunggu nama bisnis Anda populer dahulu baru mendaftarkan domainnya belakangan. Anda tentu tidak ingin orang lain memiliki domain dengan nama bisnis atau merek yang Anda telah bangun bisnis dan reputasinya bertahun-tahun.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full py-12 md:py-24 bg-blue-50 relative overflow-hidden">
+        <div class="container px-4 md:px-6 relative">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center space-y-4 mb-12">
+                    <h2 class="section-title font-bold text-[3rem]">FAQ</h2>
+                    <p class="text-slate-600 text-lg">
+                        Saya ingin meng-online-kan bisnis. Bagaimana caranya?
+                    </p>
+                </div>
+                
+                <div class="space-y-6">
+                    <!-- accordion 1 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Apa itu Domain?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                Domain adalah rangkaian teks dan angka yang digunakan untuk memberi nama alamat IP tertentu. Sebelum ada domain, untuk mengakses sebuah website, kita harus memasukkan alamat IP ke browser yang mana tentu lebih sulit diingat.
+                                <br/>
+                                Masih bingung? Oke, jadi mudahnya nama domain adalah teks (dan mungkin angka) yang diketikkan oleh user ke browser untuk mengakses website tertentu. Misalkan untuk mengakses halaman website Rumahweb, user harus mengetikkan rumahweb.com di browsernya.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion 2 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Mengapa saya butuh domain?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                Anda butuh domain untuk membuat website dan juga email dengan nama domain sendiri (misalkan nama@namadomain.com). Bahkan meski sekarang Anda belum ingin membuat website pun Anda membutuhkan domain murah untuk melindungi nama bisnis, merk, dan ide Anda.
+                                <br/>
+                                Misalkan Anda memiliki usaha bernama Roti Wonder, lalu saat ingin membuat website tentu Anda harus mendaftarkan nama domain yang berkaitan dengan nama “Roti Wonder, namun ternyata domain rotiwonder.com telah didaftarkan oleh orang lain, bahkan mungkin kompetitor Anda.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion 3 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Jika saya order sekarang, kapan domain saya diaktifkan?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                Domain Anda aktif instan dalam hitungan menit bahkan detik ketika pembayaran Anda kami terima dan telah terverifikasi oleh bagian billing
+                                <br/>
+                                Namun tentu tidak semua ekstensi bisa diaktifkan instan, terutama untuk ekstensi-ekstensi yang untuk mendaftarkannya memerlukan syarat seperti .co.id, .sch.id, dll. Aktivasi untuk ekstensi-ekstensi bersyarat tersebut harus menunggu kelengkapan persyaratan. Namun begitu persyaratan dapat terverifikasi, domain juga akan langsung diaktifkan.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion 4 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Nama domain pilihan saya tidak tersedia. Gimana donk?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                Nama domain didaftarkan berdasarkan prinsip first come first serve - siapa cepat, dia dapat. Oleh karena itu jika nama pilihan Anda cukup populer, besar kemungkinan domainnya juga telah didaftarkan pada ekstensi-ekstensi yang populer.
+                                <br/>
+                                Dengan banyaknya pilihan ekstensi sekarang ini, jika nama domain yang Anda inginkan dengan ekstensi populer seperti .com dan .id telah didaftarkan orang lain maka Anda dapat mendaftarkannya pada ekstensi yang lain seperti .site, .club, dll.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion 5 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Apa yang bisa saya lakukan dengan domain saya?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                Anda bisa membuat website, membuat email dengan domain sendiri (nama@namadomain.com), atau mengarahkannya ke media sosial Anda dan membuatnya menjadi website dengan cara redirect / forwarding sehingga saat pengunjung mengakses nama domain, maka mereka akan langsung diarahkan ke akun media sosial Anda atau bisa juga ke lapak Anda di marketplace.
+                                <br/>
+                                Oh ya, Rumahweb juga memberikan fitur microsite gratis seperti LinkTree atau S.ID. Jadi, hanya dengan membeli domain, Anda dapat langsung memiliki website mini yang bisa diisi dengan tautan ke WhatsApp, Instagram, atau lapak Anda di Marketplace. Microsite jenis ini bisa Anda jadikan link in bio di media sosial Anda. Stop pakai microsite gratisan, pakai microsite Rumahweb dengan nama domain Anda sendiri. biar branding Anda tampil lebih profesional dan terpercaya.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion 6 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Mengapa domain murah?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                Memilih domain murah adalah langkah cerdas untuk memulai bisnis online tanpa harus mengeluarkan biaya besar di awal. Di Rumahweb, kami memahami bahwa setiap langkah awal dalam membangun brand adalah keputusan penting yang mengandung risiko. Karena itu, kami hadir dengan solusi domain murah yang terjangkau namun tetap andal, agar Anda bisa segera mengonlinekan bisnis dan memperkenalkan brand Anda ke pasar global.
+                                <br>
+                                Banyak penyedia yang menawarkan domain murah, namun tidak semuanya memberikan layanan yang bisa diandalkan dalam jangka panjang. Penting bagi Anda untuk memilih registrar yang terpercaya, karena domain bukan hanya alamat website — tetapi juga aset digital yang mewakili identitas bisnis Anda. Rumahweb, dengan pengalaman dan reputasi yang kuat, siap menjadi mitra terpercaya Anda dalam mengelola dan menjaga nama domain bisnis Anda.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion 7 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Bagaimana cara cek domain yang masih bisa didaftarkan?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                Cara cek domain bisa melalui halaman web ini. Silahkan masukkan nama yang Anda inginkan pada form cek domain yang tersedia pada bagian atas halaman website ini. Apabila nama dan ekstensi yang dipilih masih tersedia, Anda dapat langsung mendaftarkannya. Sedangkan apabila nama yang dipilih pada ekstensi tertentu sudah didaftarkan oleh orang lain, Anda dapat menggunakan alternatif ekstensi lain atau menambahkan tanda strip di tengah nama yang dipilih. Misalkan rotienak.com sudah didaftarkan, Anda mungkin masih bisa mendaftarkan domain murah roti-enak.com.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion 8 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Jika saya beli domain di Rumahweb, bisakah saya menggunakan hosting lain?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                Bisa. Anda memiliki kendali penuh atas domain yang didaftarkan, termasuk mengarahkannya ke nameserver lain di luar Rumahweb. Tapi, hosting di Rumahweb tentu akan jauh lebih mudah dan murah ;)
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion 9 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Domain murah? Berapa sih harganya?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                Harga beberapa ekstensi domain memang murah. Bahkan ekstensi .xyz hanya seharga Rp 29.900 saja untuk setahun. Murah kan?
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion 10 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Apa itu ekstensi domain?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                Domain biasanya terdiri dari 2 - 3 segmen yang dipisahkan dengan tanda titik (.) atau dot. Misalkan rumahweb.com yang terdiri dari 2 segmen yaitu rumahweb dan com, atau rumahweb.co.id yang terdiri dari 3 segment yaitu rumahweb, co, dan id.
+                                <br/>
+                                Segmen kedua dan ketiga ini lah yang disebut ekstensi domain. Ada ratusan ekstensi di dunia mulai dari .id, .co.id, .com, .net, .xyz, .website, dan lain-lain. Sejak digulirkannya dot everyting oleh ICANN, ekstensi domain menyasar ke bidang-bidang khusus misalkan .car, .yoga, .golf, dan lain-lain.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion 11 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Siapa yang mengelola domain?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                Ekstensi domain dikelola oleh Registry yang kemudian melalui Registrar dijual kepada Registrant yaitu Anda sebagai pemilik domain baik secara langsung maupun melalui Reseller dari Registrar tersebut. Registry dan Registrar harus melalui proses akreditasi dari ICANN (Internet Corporation for Assigned Names and Numbers).
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion 12 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Rumahweb itu Reseller atau Registrar?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                Rumahweb adalah perusahaan yang terakreditasi oleh ICANN sebagai Registrar sejak tahun 2013 dan diaudit secara berkala untuk memastikan “kesehatan” perusahaan dan level pelayanan pelanggan.
+                                <br>
+                                Rumahweb melalui anak perusahaannya yaitu PT. Digital Registra Indonesia juga merupakan accredited registrar dari PANDI, organisasi pengelola domain Indonesia yang mengelola domain .ID. Banyak brand Indonesia dan internasional mempercayakan pendaftaran domainnya di Rumahweb.                           
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion 12 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Apa saja syarat pendaftaran ekstensi .ID?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                <p>Ekstensi top level .ID tidak lagi memiliki syarat apapun. Sedangkan untuk syarat untuk ekstensi lainnya adalah
+                                    sebagai berikut:</p>
+                                <h4 class="block mb-2 space-y-1 font-bold text-lg">Syarat domain .co.id</h4>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>KTP Republik Indonesia</li>
+                                    <li>NIB (Nomor Induk Berusaha)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion 13 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Rumahweb itu Reseller atau Registrar?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                Rumahweb adalah perusahaan yang terakreditasi oleh ICANN sebagai Registrar sejak tahun 2013 dan diaudit secara berkala untuk memastikan “kesehatan” perusahaan dan level pelayanan pelanggan.
+                                <br />
+                                Rumahweb melalui anak perusahaannya yaitu PT. Digital Registra Indonesia juga merupakan accredited registrar dari PANDI, organisasi pengelola domain Indonesia yang mengelola domain .ID. Banyak brand Indonesia dan internasional mempercayakan pendaftaran domainnya di Rumahweb.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion 13 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Apa saja syarat pendaftaran ekstensi .ID?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                <p>Ekstensi top level .ID tidak lagi memiliki syarat apapun. Sedangkan untuk syarat untuk ekstensi lainnya adalah
+                                    sebagai berikut:</p>
+                                <h4 class="block mb-2 space-y-1 font-bold text-lg">Syarat domain .co.id</h4>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>KTP Republik Indonesia</li>
+                                    <li>NIB (Nomor Induk Berusaha)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion 14 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Lebih bagus mana, domain gTLD atau domain Indonesia?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                gTLD yang merupakan singkatan dari generic top level domain adalah nama domain internasional yang tidak melekat pada sebuah negara. Contoh dari ekstensi yang tergolong gTLD adalah .COM, .NET, .INFO, dll. Sedangkan domain Indonesia yaitu .ID adalah tergolong ccTLD atau country code top level domain yang aturan-aturannya diatur oleh registry .ID yaitu PANDI.
+                                <br>
+                                Kita tidak bisa mengatakan mana yang lebih baik, oleh karena itu penting untuk memiliki nama domain pada beberapa ekstensi. Misalkan Rumahweb memiliki rumahweb.com, rumahweb.co.id, rumahweb.id, rumahweb.net, dll. Tujuannya adalah untuk memproteksi nama agar tidak disalahgunakan oleh pihak lain ada ekstensi-ekstensi domain yang masih available.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion 15 -->
+                    <div class="border border-blue-100 rounded-xl shadow-sm bg-white">
+                        <div class="accordion-header flex items-center justify-between p-4"><button
+                            class="w-full text-left text-lg font-semibold text-slate-800 hover:text-primary transition-colors">Merk saya ternyata nama domainnya telah didaftarkan. Saya harus bagaimana?</button>
+                            <button class="p-1 text-slate-500 hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+                                <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="accordion-body hidden p-4 border-t border-blue-100 text-slate-500">
+                            <div class="space-y-4">
+                                Prinsip pendaftaran domain adalah first come first serve. Namun jika menurut Anda nama domain yang sesuai merk yang Anda miliki didaftarkan orang lain dengan tujuan menghalangi Anda (domain squatting), maka Anda dapat mengajukan gugatan melalui penegak hukum (apabila berada di wilayah yurisdiksi yang sama) atau melalui UDRP (Uniform Domain-Name Dispute-Resolution Policy).
+                                <br>
+                                Kami, selaku Registrar akan patuh pada perintah pengadilan atau keputusan UDRP dan siap mengalihkan kepemilikan domain kepada Anda jika Anda memenangi gugatan tersebut.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+    class="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-blue-50 via-white to-cyan-50 relative overflow-hidden">
+    
+    <div class="container px-4 md:px-6 relative">
+      <div class="flex flex-col items-center justify-center space-y-4 text-center">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+          <div class="lg:col-span-2 space-y-6 text-center lg:text-left">
+            <div class="space-y-4">
+              <h2 class="section-title font-bold text-[3rem]">Orang Rumah</h2>
+              <p class="text-xl text-slate-600 font-medium">Selalu ada untuk Anda</p>
+            </div>
+            <div class="space-y-4 text-slate-600">
+              <p>"Orang Rumah" adalah sebutan hangat untuk tim technical support Rumahweb. Dengan moto <em>Selalu Ada
+                  untuk Anda</em>, kami siap membantu kapan pun Anda butuh. Ramah, sigap, dan selalu hadir dengan
+                solusi—karena bagi kami, kesuksesan Anda adalah obsesi kami.</p>
+            </div>
+            <div class="grid grid-cols-3 gap-6 pt-8">
+              <div class="text-center">
+                <div
+                  class="text-3xl font-bold bg-gradient-to-br from-blue-700 to-cyan-600 bg-clip-text text-transparent">
+                  200+</div>
+                <div class="text-sm text-slate-600">Tim Profesional</div>
+              </div>
+              <div class="text-center">
+                <div
+                  class="text-3xl font-bold bg-gradient-to-br from-blue-700 to-cyan-600 bg-clip-text text-transparent">
+                  24/7</div>
+                <div class="text-sm text-slate-600">Dukungan Teknis</div>
+              </div>
+              <div class="text-center">
+                <div
+                  class="text-3xl font-bold bg-gradient-to-br from-blue-700 to-cyan-600 bg-clip-text text-transparent">
+                  20+</div>
+                <div class="text-sm text-slate-600">Tahun Pengalaman</div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-1 relative">
+            <div class="relative z-10">
+              <div class="absolute inset-0 bg-gradient-to-br from-blue-700 to-cyan-600 rounded-3xl transform rotate-3">
+              </div><img alt="Tim Orang Rumah - Profesional Rumahweb Indonesia"
+                class="relative rounded-3xl shadow-2xl w-full h-auto transform -rotate-2 hover:rotate-0 transition-transform duration-500"
+                src="img/orang-rumah.webp">
+              <div
+                class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-lg p-4 transform rotate-3 hover:rotate-0 transition-transform">
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-12 h-12 bg-gradient-to-br from-blue-700 to-cyan-600 rounded-full flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-headphones h-6 w-6 text-white">
+                      <path
+                        d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3">
+                      </path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-sm font-bold text-slate-800">Support 24/7</div>
+                    <div class="text-xs text-slate-600">Siap membantu Anda</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute -top-4 -right-4 bg-gradient-to-r from-yellow-400 to-[#F9B427] text-slate-800 px-4 py-2 rounded-full shadow-lg font-bold text-sm">
+                #TeamRumahweb</div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-16 md:mt-24 w-full">
+          <div class="bg-gradient-to-r from-blue-300 to-cyan-300 rounded-3xl p-10 shadow-xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              <div class="flex flex-col items-center space-y-4">
+                <div class="w-16 h-16 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                    <path
+                      d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z">
+                    </path>
+                  </svg></div>
+                <h3 class="text-2xl font-bold text-white">Siaga 24 x 7</h3>
+                <p class="text-white text-base">Jangan ragu untuk menghubungi kami melalui livechat, telepon, dan email
+                  kapanpun Anda butuh bantuan.</p>
+              </div>
+              <div class="flex flex-col items-center space-y-4">
+                <div class="w-16 h-16 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    <path d="M8 7h8"></path>
+                    <path d="M8 11h8"></path>
+                    <path d="M8 15h5"></path>
+                  </svg></div>
+                <h3 class="text-2xl font-bold text-white">Tutorial Lengkap</h3>
+                <p class="text-white text-base">Tersedia tutorial yang sangat lengkap dalam bentuk artikel dan video
+                  untuk memandu Anda dalam menggunakan web hosting.</p>
+              </div>
+              <div class="flex flex-col items-center space-y-4">
+                <div class="w-16 h-16 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 20V10"></path>
+                    <path d="M12 20V4"></path>
+                    <path d="M6 20v-6"></path>
+                  </svg></div>
+                <h3 class="text-2xl font-bold text-white">Garansi Uptime</h3>
+                <p class="text-white text-base">Garansi uptime 99% didukung multi backbone internet dilengkapi anti
+                  DDOS, server yang handal, dan dynamic firewall.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <footer class="w-full py-12 md:py-24 bg-blue-900 text-white">
+        <div class="container px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+                <div class="space-y-4">
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-semibold text-blue-200">Domain</h4>
+                        <ul class="space-y-2">
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/domain-murah/">Domain Murah</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/transfer-domain/">Transfer Domain</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-semibold text-blue-200">Hosting</h4>
+                        <ul class="space-y-2">
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/hosting-murah/">Hosting Murah</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/cloud-hosting/">Cloud Hosting</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/wordpress-hosting/">WordPress Hosting</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-semibold text-blue-200">Cloud</h4>
+                        <ul class="space-y-2">
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/vps-murah/">VPS Murah</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/vps-alibaba-cloud/">VPS Alibaba</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/dedicated-server/">Dedicated Server Indonesia</a>
+                            </li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/vps-murah/">VPS Indonesia</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-semibold text-blue-200">Email</h4>
+                        <ul class="space-y-2">
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/email-bisnis/">Email Bisnis</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/email-perusahaan/">Email Perusahaan</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/google-workspace/">Google Workspace</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/microsoft-365/">Microsoft 365</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-semibold text-blue-200">Website</h4>
+                        <ul class="space-y-2">
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/jasa-pembuatan-website/">Jasa Pembuatan Website</a>
+                            </li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/ai-website-builder/">AI Website Builder</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/website-builder/">Website Builder</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-semibold text-blue-200">Marketing</h4>
+                        <ul class="space-y-2">
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/rankingcoach/">RankingCoach</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-semibold text-blue-200">Security</h4>
+                        <ul class="space-y-2">
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/ssl-murah/">SSL Murah</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/acronis-backup/">Acronis Backup</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/acronis-endpoint/">Acronis End Point Protection</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-semibold text-blue-200">Informasi</h4>
+                        <ul class="space-y-2">
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/service-level-agreement-sla/">Service Level
+                                    Agreement</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/acceptable-use-policy-aup/">Acceptable Use Policy</a>
+                            </li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/kebijakan-penggunaan-layanan/">Perjanjian Layanan</a>
+                            </li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/kebijakan-privasi/">Kebijakan Privasi</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/kebijakan-privasi/">Kebijakan SMKI</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-semibold text-blue-200">Perusahaan</h4>
+                        <ul class="space-y-2">
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/tentang/">Tentang Rumahweb</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://karir.rumahweb.com/">Karir</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-semibold text-blue-200">Support</h4>
+                        <ul class="space-y-2">
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/kontak/">Kontak Kami</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://ipg.rumahweb.com/konfirmasi/">Konfirmasi Pembayaran</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/journal/">Journal</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://blog.rumahweb.com/">Blog</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/tools/">Tools</a></li>
+                            <li class=""><a class="hover:text-blue-100 transition-colors text-sm" href="https://www.rumahweb.com/kontak/">Abuse Report</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-blue-700 pt-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="flex flex-col items-start space-y-4 max-w-2xl"><img alt="Rumahweb Logo" class="h-[30px] w-auto" src="https://img.rwbcdn.net/img/w/rumahweb-logo-footer.svg">
+                        <p class="text-blue-200 text-left">Rumahweb adalah penyedia web hosting Indonesia
+                            terbaik dengan layanan domain, VPS, dan email untuk bisnis Anda.</p>
+                    </div>
+                    <div class="flex items-center justify-center md:justify-end space-x-4"><a href="https://www.facebook.com/RumahwebIndonesia" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-blue-100 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" class="">
+                                </path>
+                            </svg></a><a href="https://www.instagram.com/rumahwebgram" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-blue-100 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" class=""></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" class=""></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" class=""></line>
+                            </svg></a><a href="https://x.com/rumahwebtweet" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)" class="hover:text-blue-100 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" class=""></path>
+                            </svg></a><a href="https://www.linkedin.com/company/rumahweb" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-blue-100 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" class="">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12" class=""></rect>
+                                <circle cx="4" cy="4" r="2" class=""></circle>
+                            </svg></a><a href="https://www.youtube.com/rumahwebtv" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="hover:text-blue-100 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" class=""></path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" class=""></polygon>
+                            </svg></a></div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-blue-700 text-center text-blue-200">
+                <p class="">© 2025 Rumahweb. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="index.js"></script>
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                tabButtons.forEach(btn => {
+                    btn.setAttribute('data-state', 'inactive');
+                    btn.setAttribute('aria-selected', 'false');
+                });
+                button.setAttribute('data-state', 'active');
+                button.setAttribute('aria-selected', 'true');
+                const tabAraiControl = button.getAttribute('aria-controls');
+                if(tabAraiControl=="tab-domain-search"){
+                    document.getElementById("tab-domain-search").hidden = false;
+                    document.getElementById("tab-ai-generator").hidden = true;
+                }else{
+                    document.getElementById("tab-domain-search").hidden = true;
+                    document.getElementById("tab-ai-generator").hidden = false;
+                }
+            });
+        });
+        const btnDomains = document.querySelectorAll('.btn-domain');
+        btnDomains.forEach(button => {
+            button.addEventListener('click', () => {
+                btnDomains.forEach(btn => {
+                    btn.setAttribute('data-active', 'false');
+                    btn.classList.remove('bg-gradient-to-r', 'from-[#1E40AF]', 'to-cyan-600', 'text-white', 'shadow-sm');
+                    btn.classList.add('text-slate-400', 'hover:text-slate-500', 'hover:bg-gray-50');
+                    document.getElementById("domain-populer").hidden = false;
+                });
+                button.setAttribute('data-active', 'true');
+                button.classList.remove('text-slate-400', 'hover:text-slate-500', 'hover:bg-gray-50');
+                button.classList.add('bg-gradient-to-r', 'from-[#1E40AF]', 'to-cyan-600', 'text-white', 'shadow-sm');
+
+                if(button.getAttribute('aria-controls') === "domain-populer"){
+                    document.getElementById("domain-populer").hidden = false;
+                    document.getElementById("domain-promo").hidden = true;
+                }else{
+                    document.getElementById("domain-populer").hidden = true;
+                    document.getElementById("domain-promo").hidden = false;
+                }
+            });
+        });
+        
+
+    </script>
+</body>
+
+</html>
