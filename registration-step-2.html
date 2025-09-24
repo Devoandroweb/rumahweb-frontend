@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front New Rumahweb</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-montserrat: 'Montserrat', sans-serif;
+            --font-open-sans: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-gradient-to-br from-blue-900 via-blue-800 to-purple-800">
+<main class="container mx-auto px-4 py-24">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-white font-[family-name:var(--font-montserrat)] mb-6">
+                Registration <span class="text-lime-400">Form</span></h1>
+            <p class="text-xl text-blue-100 font-open-sans">BOOM! Best decision ever! 🔥 Just a few clicks away to join
+                JogjaDevDay - where awesome developers level up together!</p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div data-slot="card"
+                class="text-card-foreground flex flex-col gap-6 rounded-xl border py-6 backdrop-blur-md bg-white/10 border-white/20 shadow-xl"
+               >
+                <div data-slot="card-header"
+                    class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+                   >
+                    <div data-slot="card-title" class="text-2xl font-bold font-montserrat text-lime-400"
+                       >Personal Data</div>
+                </div>
+                <div data-slot="card-content" class="px-6 space-y-6">
+                    <div class="space-y-2"><label data-slot="label"
+                            class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-bold text-lg"
+                            for="name">Full Name *</label><input type="text" data-slot="input"
+                            class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 flex h-9 w-full min-w-0 rounded-md border px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-lime-400"
+                            id="name" placeholder="Enter your full name" required=""></div>
+                    <div class="space-y-2"><label data-slot="label"
+                            class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-bold text-lg"
+                            for="email">Email Address *</label><input type="email" data-slot="input"
+                            class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 flex h-9 w-full min-w-0 rounded-md border px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-lime-400"
+                            id="email" placeholder="Enter your email address" required=""></div>
+                    <div class="space-y-2"><label data-slot="label"
+                            class="flex items-center gap-2 text-sm leading-none select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-medium"
+                            for="email-repeat">Repeat Email Address *</label><input type="email" data-slot="input"
+                            class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 flex h-9 w-full min-w-0 rounded-md border px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-lime-400"
+                            id="email-repeat" placeholder="Repeat your email address" required=""></div>
+                    <div class="space-y-2"><label data-slot="label"
+                            class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-bold text-lg"
+                            for="mobile">Mobile Number *</label><input type="tel" data-slot="input"
+                            class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 flex h-9 w-full min-w-0 rounded-md border px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-lime-400"
+                            id="mobile" placeholder="Enter your mobile number" required=""></div>
+                    <div class="space-y-2"><label data-slot="label"
+                            class="flex items-center gap-2 text-sm leading-none select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-bold"
+                            for="address">Address *</label><input type="text" data-slot="input"
+                            class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 flex h-9 w-full min-w-0 rounded-md border px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-lime-400"
+                            id="address" placeholder="Enter your address" required=""></div>
+                    <div class="space-y-2"><label data-slot="label"
+                            class="flex items-center gap-2 text-sm leading-none select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-bold"
+                            for="city">City *</label><input type="text" data-slot="input"
+                            class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 flex h-9 w-full min-w-0 rounded-md border px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-lime-400"
+                            id="city" placeholder="Enter your city" required=""></div>
+                    <div class="space-y-2"><label data-slot="label"
+                            class="flex items-center gap-2 text-sm leading-none select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-bold"
+                            for="province">Province *</label><input type="text" data-slot="input"
+                            class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 flex h-9 w-full min-w-0 rounded-md border px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-lime-400"
+                            id="province" placeholder="Enter your province" required=""></div>
+                    <div class="space-y-2"><label data-slot="label"
+                            class="flex items-center gap-2 text-sm leading-none select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-bold"
+                            for="country">Country *</label><input type="text" data-slot="input"
+                            class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 flex h-9 w-full min-w-0 rounded-md border px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-lime-400"
+                            id="country" placeholder="Enter your country" required=""></div>
+                </div>
+            </div>
+            <div class="space-y-8">
+                <div data-slot="card"
+                    class="text-card-foreground flex flex-col gap-6 rounded-xl border py-6 backdrop-blur-md bg-white/10 border-white/20 shadow-xl"
+                   >
+                    <div data-slot="card-header"
+                        class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+                       >
+                        <div data-slot="card-title" class="text-2xl font-bold font-montserrat text-lime-400"
+                           >Occupancy</div>
+                    </div>
+                    <div data-slot="card-content" class="px-6 space-y-6">
+                        <div class="space-y-4"><label data-slot="label"
+                                class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-bold text-lg">Select
+                                your occupancy type *</label>
+                            <div role="radiogroup" aria-required="false" dir="ltr" data-slot="radio-group"
+                                class="grid gap-3 space-y-3" tabindex="0" style="outline:none">
+                                <div class="flex items-center space-x-3"><button type="button"
+                                        role="radio" aria-checked="false" data-state="unchecked" value="student"
+                                        data-slot="radio-group-item"
+                                        class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square size-4 shrink-0 rounded-full border shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 border-white/40 text-lime-400"
+                                        id="student" tabindex="-1" data-radix-collection-item=""></button><label
+                                        data-slot="label"
+                                        class="flex items-center gap-2 text-sm leading-none select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-medium cursor-pointer"
+                                        for="student">Student</label></div>
+                                <div class="flex items-center space-x-3"><button type="button"
+                                        role="radio" aria-checked="false" data-state="unchecked" value="professional"
+                                        data-slot="radio-group-item"
+                                        class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square size-4 shrink-0 rounded-full border shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 border-white/40 text-lime-400"
+                                        id="professional" tabindex="-1" data-radix-collection-item=""></button><label
+                                        data-slot="label"
+                                        class="flex items-center gap-2 text-sm leading-none select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-medium cursor-pointer"
+                                        for="professional">Professional</label></div>
+                                <div class="flex items-center space-x-3"><button type="button"
+                                        role="radio" aria-checked="false" data-state="unchecked" value="educator"
+                                        data-slot="radio-group-item"
+                                        class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square size-4 shrink-0 rounded-full border shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 border-white/40 text-lime-400"
+                                        id="educator" tabindex="-1" data-radix-collection-item=""></button><label
+                                        data-slot="label"
+                                        class="flex items-center gap-2 text-sm leading-none select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-medium cursor-pointer"
+                                        for="educator">Educator</label></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-slot="card"
+                    class="text-card-foreground flex flex-col gap-6 rounded-xl border py-6 backdrop-blur-md bg-white/10 border-white/20 shadow-xl"
+                   >
+                    <div data-slot="card-header"
+                        class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+                       >
+                        <div data-slot="card-title" class="text-2xl font-bold font-montserrat text-lime-400"
+                           >Community</div>
+                    </div>
+                    <div data-slot="card-content" class="px-6 space-y-6">
+                        <div class="space-y-4"><label data-slot="label"
+                                class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-bold text-lg">Select
+                                communities you're currently be part of:</label>
+                            <div class="grid grid-cols-1 gap-4">
+                                <div class="flex items-center space-x-3"><button type="button"
+                                        role="checkbox" aria-checked="false" data-state="unchecked" value="on"
+                                        data-slot="checkbox"
+                                        class="peer dark:bg-input/30 data-[state=checked]:text-primary-foreground dark:data-[state=checked]:bg-primary focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive size-4 shrink-0 rounded-[4px] border shadow-xs transition-shadow outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 border-white/40 data-[state=checked]:bg-lime-400 data-[state=checked]:border-lime-400"
+                                        id="Wordpress"></button><label data-slot="label"
+                                        class="flex items-center gap-2 text-sm leading-none select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-medium cursor-pointer"
+                                        for="Wordpress">Wordpress</label></div>
+                                <div class="flex items-center space-x-3"><button type="button"
+                                        role="checkbox" aria-checked="false" data-state="unchecked" value="on"
+                                        data-slot="checkbox"
+                                        class="peer dark:bg-input/30 data-[state=checked]:text-primary-foreground dark:data-[state=checked]:bg-primary focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive size-4 shrink-0 rounded-[4px] border shadow-xs transition-shadow outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 border-white/40 data-[state=checked]:bg-lime-400 data-[state=checked]:border-lime-400"
+                                        id="Python"></button><label data-slot="label"
+                                        class="flex items-center gap-2 text-sm leading-none select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-medium cursor-pointer"
+                                        for="Python">Python</label></div>
+                                <div class="flex items-center space-x-3"><button type="button"
+                                        role="checkbox" aria-checked="false" data-state="unchecked" value="on"
+                                        data-slot="checkbox"
+                                        class="peer dark:bg-input/30 data-[state=checked]:text-primary-foreground dark:data-[state=checked]:bg-primary focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive size-4 shrink-0 rounded-[4px] border shadow-xs transition-shadow outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 border-white/40 data-[state=checked]:bg-lime-400 data-[state=checked]:border-lime-400"
+                                        id="Gamelan"></button><label data-slot="label"
+                                        class="flex items-center gap-2 text-sm leading-none select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-medium cursor-pointer"
+                                        for="Gamelan">Gamelan</label></div>
+                                <div class="flex items-center space-x-3"><button type="button"
+                                        role="checkbox" aria-checked="false" data-state="unchecked" value="on"
+                                        data-slot="checkbox"
+                                        class="peer dark:bg-input/30 data-[state=checked]:text-primary-foreground dark:data-[state=checked]:bg-primary focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive size-4 shrink-0 rounded-[4px] border shadow-xs transition-shadow outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 border-white/40 data-[state=checked]:bg-lime-400 data-[state=checked]:border-lime-400"
+                                        id="ngeSec"></button><label data-slot="label"
+                                        class="flex items-center gap-2 text-sm leading-none select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-medium cursor-pointer"
+                                        for="ngeSec">ngeSec</label></div>
+                                <div class="flex items-center space-x-3"><button type="button"
+                                        role="checkbox" aria-checked="false" data-state="unchecked" value="on"
+                                        data-slot="checkbox"
+                                        class="peer dark:bg-input/30 data-[state=checked]:text-primary-foreground dark:data-[state=checked]:bg-primary focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive size-4 shrink-0 rounded-[4px] border shadow-xs transition-shadow outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 border-white/40 data-[state=checked]:bg-lime-400 data-[state=checked]:border-lime-400"
+                                        id="Jogja Coding House"></button><label data-slot="label"
+                                        class="flex items-center gap-2 text-sm leading-none select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-medium cursor-pointer"
+                                        for="Jogja Coding House">Jogja Coding House</label></div>
+                                <div class="flex items-center space-x-3"><button type="button"
+                                        role="checkbox" aria-checked="false" data-state="unchecked" value="on"
+                                        data-slot="checkbox"
+                                        class="peer dark:bg-input/30 data-[state=checked]:text-primary-foreground dark:data-[state=checked]:bg-primary focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive size-4 shrink-0 rounded-[4px] border shadow-xs transition-shadow outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 border-white/40 data-[state=checked]:bg-lime-400 data-[state=checked]:border-lime-400"
+                                        id="Google Developers Group"></button><label data-slot="label"
+                                        class="flex items-center gap-2 text-sm leading-none select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-medium cursor-pointer"
+                                        for="Google Developers Group">Google Developers Group</label></div>
+                                <div class="flex items-center space-x-3"><button type="button"
+                                        role="checkbox" aria-checked="false" data-state="unchecked" value="on"
+                                        data-slot="checkbox"
+                                        class="peer dark:bg-input/30 data-[state=checked]:text-primary-foreground dark:data-[state=checked]:bg-primary focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive size-4 shrink-0 rounded-[4px] border shadow-xs transition-shadow outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 border-white/40 data-[state=checked]:bg-lime-400 data-[state=checked]:border-lime-400"
+                                        id="Other"></button><label data-slot="label"
+                                        class="flex items-center gap-2 text-sm leading-none select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-medium cursor-pointer"
+                                        for="Other">Other</label></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-3 p-6 rounded-lg backdrop-blur-md bg-white/5 border border-white/10"
+                   ><button type="button" role="checkbox" aria-checked="false"
+                        data-state="unchecked" value="on" data-slot="checkbox"
+                        class="peer dark:bg-input/30 data-[state=checked]:text-primary-foreground dark:data-[state=checked]:bg-primary focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive size-4 shrink-0 rounded-[4px] border shadow-xs transition-shadow outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 border-white/40 data-[state=checked]:bg-lime-400 data-[state=checked]:border-lime-400 mt-1"
+                        id="privacy-agreement"></button><label data-slot="label"
+                        class="flex items-center gap-2 text-sm select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-medium cursor-pointer leading-relaxed"
+                        for="privacy-agreement">I agree to the<!-- --> <a
+                            class="text-lime-400 hover:text-lime-300 underline underline-offset-2 transition-colors"
+                            href="/privacy-policy">Privacy Policy</a> <!-- -->and consent to the processing of my
+                        personal data for event registration and communication purposes. *</label></div>
+            </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 pt-8 max-w-md mx-auto"><button
+                data-slot="button"
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border shadow-xs hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[&gt;svg]:px-3 flex-1 border-white/20 text-white hover:bg-white/10 bg-transparent">Back
+                to Step 1</button><button data-slot="button"
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[&gt;svg]:px-3 flex-1 bg-gradient-to-r from-lime-400 to-lime-500 text-blue-900 hover:from-lime-500 hover:to-lime-600 font-semibold">Continue
+                to Step 3</button></div>
+    </div>
+</main>
+
+<script>
+    document.querySelectorAll('[data-slot="checkbox"]').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const checked = this.getAttribute('aria-checked') === 'true' || this.getAttribute('aria-checked') === 'mixed';
+            this.setAttribute('aria-checked', checked ? 'false' : 'true');
+            this.setAttribute('data-state', checked ? 'unchecked' : 'checked');
+
+            // Handle indicator
+            let indicator = this.querySelector('[data-slot="checkbox-indicator"]');
+            if (!checked) {
+                if (!indicator) {
+                    indicator = document.createElement('span');
+                    indicator.setAttribute('data-state', 'checked');
+                    indicator.setAttribute('data-slot', 'checkbox-indicator');
+                    indicator.className = 'flex items-center justify-center text-white transition-none';
+                    indicator.style.pointerEvents = 'none';
+                    indicator.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check size-3.5"><path d="M20 6 9 17l-5-5"></path></svg>`;
+                    this.appendChild(indicator);
+                }
+            } else {
+                if (indicator) {
+                    indicator.remove();
+                }
+            }
+        });
+    });
+
+    document.querySelectorAll('[data-slot="radio-group-item"]').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const group = btn.closest('[data-slot="radio-group"]');
+            if (!group) return;
+            group.querySelectorAll('[data-slot="radio-group-item"]').forEach(radio => {
+                radio.setAttribute('aria-checked', 'false');
+                radio.setAttribute('data-state', 'unchecked');
+                const indicator = radio.querySelector('[data-slot="radio-indicator"]');
+                if (indicator) indicator.remove();
+            });
+            btn.setAttribute('aria-checked', 'true');
+            btn.setAttribute('data-state', 'checked');
+            // Add indicator
+            let indicator = btn.querySelector('[data-slot="radio-group-indicator"]');
+            if (!indicator) {
+                indicator = document.createElement('span');
+                indicator.setAttribute('data-state', 'checked');
+                indicator.setAttribute('data-slot', 'radio-group-indicator');
+                indicator.className = 'relative flex items-center justify-center';
+                indicator.style.pointerEvents = 'none';
+                indicator.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle fill-green-700 absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -translate-y-1/2"><circle cx="12" cy="12" r="10"></circle></svg>`;
+                btn.appendChild(indicator);
+            }
+        });
+    });
+</script>
+</body>
+
+</html>

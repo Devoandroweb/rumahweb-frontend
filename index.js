@@ -141,6 +141,10 @@ tabs.forEach((tab) => {
 document.querySelectorAll(".accordion-header").forEach((header) => {
   header.addEventListener("click", () => {
     const body = header.nextElementSibling;
+    const chevron = header.querySelector(".lucide-chevron-down");
+    if (chevron) {
+      chevron.classList.toggle("rotate-180");
+    }
     document.querySelectorAll(".accordion-body").forEach((b) => {
       if (b !== body) b.classList.add("hidden");
     });
