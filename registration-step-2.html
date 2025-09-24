@@ -122,6 +122,26 @@
                                         class="flex items-center gap-2 text-sm leading-none select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-white font-medium cursor-pointer"
                                         for="educator">Educator</label></div>
                             </div>
+                            <div class="relative w-64">
+                                <!-- Trigger -->
+                                <button id="selectButton"
+                                    class="w-full flex justify-between items-center rounded-lg border border-gray-300 bg-white px-4 py-2 text-left text-gray-700 shadow-sm focus:outline-none">
+                                    <span id="selectedOption">Pilih Opsi</span>
+                                    <svg class="h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+            
+                                <!-- Dropdown List -->
+                                <div id="selectMenu"
+                                    class="absolute z-999999 mt-1 w-full origin-top rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5 scale-95 opacity-0 hidden transition transform duration-200 ease-out">
+                                    <ul class="max-h-60 overflow-auto rounded-md py-1 text-base leading-6 shadow-xs">
+                                    <li data-value="opsi1" class="cursor-pointer select-none px-4 py-2 hover:bg-indigo-100">Opsi 1</li>
+                                    <li data-value="opsi2" class="cursor-pointer select-none px-4 py-2 hover:bg-indigo-100">Opsi 2</li>
+                                    <li data-value="opsi3" class="cursor-pointer select-none px-4 py-2 hover:bg-indigo-100">Opsi 3</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -265,6 +285,47 @@
             }
         });
     });
+    
+</script>
+<script>
+  const selectButton = document.getElementById("selectButton");
+  const selectMenu = document.getElementById("selectMenu");
+  const selectedOption = document.getElementById("selectedOption");
+  const options = selectMenu.querySelectorAll("li");
+
+  // Toggle dropdown with zoom animation
+  selectButton.addEventListener("click", () => {
+    if (selectMenu.classList.contains("hidden")) {
+      selectMenu.classList.remove("hidden");
+      requestAnimationFrame(() => {
+        selectMenu.classList.remove("scale-95", "opacity-0");
+        selectMenu.classList.add("scale-100", "opacity-100");
+      });
+    } else {
+      selectMenu.classList.remove("scale-100", "opacity-100");
+      selectMenu.classList.add("scale-95", "opacity-0");
+      setTimeout(() => selectMenu.classList.add("hidden"), 200);
+    }
+  });
+
+  // Pilih opsi
+  options.forEach(option => {
+    option.addEventListener("click", () => {
+      selectedOption.textContent = option.textContent;
+      selectMenu.classList.remove("scale-100", "opacity-100");
+      selectMenu.classList.add("scale-95", "opacity-0");
+      setTimeout(() => selectMenu.classList.add("hidden"), 200);
+    });
+  });
+
+  // Klik luar untuk tutup
+  document.addEventListener("click", (e) => {
+    if (!selectButton.contains(e.target) && !selectMenu.contains(e.target)) {
+      selectMenu.classList.remove("scale-100", "opacity-100");
+      selectMenu.classList.add("scale-95", "opacity-0");
+      setTimeout(() => selectMenu.classList.add("hidden"), 200);
+    }
+  });
 </script>
 </body>
 

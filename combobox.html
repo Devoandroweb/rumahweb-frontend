@@ -12,187 +12,69 @@
   </style>
 </head>
 <body class="bg-slate-100 min-h-screen flex items-start justify-center p-8">
+<div class="relative w-64">
+  <!-- Trigger -->
+  <button id="selectButton"
+    class="w-full flex justify-between items-center rounded-lg border border-gray-300 bg-white px-4 py-2 text-left text-gray-700 shadow-sm focus:outline-none">
+    <span id="selectedOption">Pilih Opsi</span>
+    <svg class="h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
 
-  <div id="combo-root" class="w-full max-w-md">
-    <label id="combo-label" for="combo-input" class="block text-sm text-slate-600 mb-2">Pilih Negara</label>
-
-    <div class="relative">
-      <div id="combobox" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-owns="combo-list" class="flex items-center gap-2 bg-white border border-slate-200 rounded-lg p-2 shadow-sm focus-within:ring-2 focus-within:ring-indigo-300">
-        <input id="combo-input" class="flex-1 text-sm outline-none bg-transparent placeholder:text-slate-400" type="text" aria-autocomplete="list" aria-controls="combo-list" autocomplete="off" placeholder="Mulai ketik atau pilih..." />
-        <button id="clear-btn" aria-label="Bersihkan" title="Bersihkan" class="hidden text-slate-500 hover:text-slate-700 p-1 rounded" type="button">✕</button>
-        <button id="toggle-btn" aria-label="Tampilkan opsi" title="Tampilkan opsi" class="text-slate-500 hover:text-slate-700 p-1 rounded" type="button">▾</button>
-      </div>
-
-      <div id="combo-list" class="combo-list absolute z-50 left-0 right-0 mt-2 bg-white border border-slate-200 rounded-lg shadow-lg overflow-auto hidden" role="listbox" tabindex="-1" aria-labelledby="combo-label">
-        <!-- options akan di-render lewat JS -->
-      </div>
-    </div>
+  <!-- Dropdown List -->
+  <div id="selectMenu"
+    class="absolute z-10 mt-1 w-full origin-top rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5 scale-95 opacity-0 hidden transition transform duration-200 ease-out">
+    <ul class="max-h-60 overflow-auto rounded-md py-1 text-base leading-6 shadow-xs">
+      <li data-value="opsi1" class="cursor-pointer select-none px-4 py-2 hover:bg-indigo-100">Opsi 1</li>
+      <li data-value="opsi2" class="cursor-pointer select-none px-4 py-2 hover:bg-indigo-100">Opsi 2</li>
+      <li data-value="opsi3" class="cursor-pointer select-none px-4 py-2 hover:bg-indigo-100">Opsi 3</li>
+    </ul>
   </div>
+</div>
 
 <script>
-(function(){
-  // sample data
-  const items = [
-    { id: 'id', label: 'Indonesia', meta: 'Asia' },
-    { id: 'sg', label: 'Singapore', meta: 'Asia' },
-    { id: 'my', label: 'Malaysia', meta: 'Asia' },
-    { id: 'th', label: 'Thailand', meta: 'Asia' },
-    { id: 'ph', label: 'Philippines', meta: 'Asia' },
-    { id: 'us', label: 'United States', meta: 'Americas' },
-    { id: 'gb', label: 'United Kingdom', meta: 'Europe' },
-    { id: 'de', label: 'Germany', meta: 'Europe' },
-    { id: 'jp', label: 'Japan', meta: 'Asia' },
-    { id: 'au', label: 'Australia', meta: 'Oceania' },
-  ];
+  const selectButton = document.getElementById("selectButton");
+  const selectMenu = document.getElementById("selectMenu");
+  const selectedOption = document.getElementById("selectedOption");
+  const options = selectMenu.querySelectorAll("li");
 
-  // refs
-  const root = document.getElementById('combo-root');
-  const combobox = document.getElementById('combobox');
-  const input = document.getElementById('combo-input');
-  const list = document.getElementById('combo-list');
-  const clearBtn = document.getElementById('clear-btn');
-  const toggleBtn = document.getElementById('toggle-btn');
-
-  // state
-  let open = false;
-  let filtered = [...items];
-  let activeIndex = -1; // index dalam filtered
-  let value = null;
-
-  function renderOptions(){
-    list.innerHTML = '';
-    if (filtered.length === 0) {
-      const no = document.createElement('div');
-      no.className = 'p-3 text-sm text-slate-500 text-center';
-      no.textContent = 'Tidak ditemukan';
-      list.appendChild(no);
-      return;
-    }
-
-    filtered.forEach((it, idx) => {
-      const el = document.createElement('div');
-      el.setAttribute('role','option');
-      el.id = `opt-${it.id}`;
-      el.dataset.index = idx;
-      el.className = 'p-2.5 flex justify-between items-center cursor-pointer rounded-md hover:bg-indigo-50';
-      if (value && value.id === it.id) {
-        el.classList.add('bg-indigo-50','font-semibold','text-indigo-600');
-      }
-      if (idx === activeIndex) {
-        el.classList.add('ring-2','ring-indigo-200');
-      }
-
-      const left = document.createElement('div');
-      left.className = 'text-sm';
-      left.textContent = it.label;
-
-      const right = document.createElement('div');
-      right.className = 'text-xs text-slate-500';
-      right.textContent = it.meta || '';
-
-      el.appendChild(left);
-      el.appendChild(right);
-
-      el.addEventListener('mousedown', (e) => { e.preventDefault(); selectIndex(idx); });
-      list.appendChild(el);
-    });
-
-    // update aria-activedescendant
-    if (activeIndex >= 0 && filtered[activeIndex]) {
-      input.setAttribute('aria-activedescendant', `opt-${filtered[activeIndex].id}`);
+  // Toggle dropdown with zoom animation
+  selectButton.addEventListener("click", () => {
+    if (selectMenu.classList.contains("hidden")) {
+      selectMenu.classList.remove("hidden");
+      requestAnimationFrame(() => {
+        selectMenu.classList.remove("scale-95", "opacity-0");
+        selectMenu.classList.add("scale-100", "opacity-100");
+      });
     } else {
-      input.setAttribute('aria-activedescendant','');
-    }
-  }
-
-  function openList(){
-    if (open) return;
-    open = true;
-    list.classList.remove('hidden');
-    combobox.setAttribute('aria-expanded','true');
-    renderOptions();
-  }
-  function closeList(){
-    if (!open) return;
-    open = false;
-    list.classList.add('hidden');
-    combobox.setAttribute('aria-expanded','false');
-    activeIndex = -1;
-    input.setAttribute('aria-activedescendant','');
-  }
-
-  function selectIndex(i){
-    const it = filtered[i];
-    if (!it) return;
-    value = it;
-    input.value = it.label;
-    input.setAttribute('data-value', it.id);
-    clearBtn.classList.remove('hidden');
-    closeList();
-    root.dispatchEvent(new CustomEvent('combobox:select', { detail: it }));
-  }
-
-  function clearSelection(){
-    value = null;
-    input.value = '';
-    input.removeAttribute('data-value');
-    clearBtn.classList.add('hidden');
-    filtered = [...items];
-    renderOptions();
-  }
-
-  function filter(q){
-    const qq = String(q||'').trim().toLowerCase();
-    if (!qq) filtered = [...items];
-    else filtered = items.filter(it => it.label.toLowerCase().includes(qq) || (it.meta && it.meta.toLowerCase().includes(qq)));
-    activeIndex = filtered.length ? 0 : -1;
-    renderOptions();
-  }
-
-  function scrollActiveIntoView(){
-    requestAnimationFrame(() => {
-      const active = list.querySelector('[data-index][id="opt-' + (filtered[activeIndex]?.id || '') + '"]');
-      const el = list.querySelector('[data-index][data-index="' + activeIndex + '"]');
-      if (!el) return;
-      const listRect = list.getBoundingClientRect();
-      const elRect = el.getBoundingClientRect();
-      if (elRect.top < listRect.top) el.scrollIntoView({block:'nearest'});
-      else if (elRect.bottom > listRect.bottom) el.scrollIntoView({block:'nearest'});
-    });
-  }
-
-  // events
-  input.addEventListener('input', (e) => { filter(e.target.value); openList(); clearBtn.classList.toggle('hidden', !e.target.value); });
-
-  input.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowDown'){
-      e.preventDefault(); if (!open) openList(); if (filtered.length) { activeIndex = (activeIndex + 1) % filtered.length; renderOptions(); scrollActiveIntoView(); }
-    } else if (e.key === 'ArrowUp'){
-      e.preventDefault(); if (!open) openList(); if (filtered.length) { activeIndex = (activeIndex - 1 + filtered.length) % filtered.length; renderOptions(); scrollActiveIntoView(); }
-    } else if (e.key === 'Enter'){
-      e.preventDefault(); if (open && activeIndex >= 0) selectIndex(activeIndex); else closeList();
-    } else if (e.key === 'Escape'){
-      if (open) { closeList(); e.preventDefault(); }
-    } else if (e.key === 'Tab'){
-      closeList();
+      selectMenu.classList.remove("scale-100", "opacity-100");
+      selectMenu.classList.add("scale-95", "opacity-0");
+      setTimeout(() => selectMenu.classList.add("hidden"), 200);
     }
   });
 
-  toggleBtn.addEventListener('click', () => { if (open) { closeList(); input.focus(); } else { openList(); input.focus(); } });
-  clearBtn.addEventListener('click', () => { clearSelection(); input.focus(); });
+  // Pilih opsi
+  options.forEach(option => {
+    option.addEventListener("click", () => {
+      selectedOption.textContent = option.textContent;
+      selectMenu.classList.remove("scale-100", "opacity-100");
+      selectMenu.classList.add("scale-95", "opacity-0");
+      setTimeout(() => selectMenu.classList.add("hidden"), 200);
+    });
+  });
 
-  document.addEventListener('click', (e) => { if (!root.contains(e.target)) closeList(); });
-
-  // init
-  filtered = [...items];
-  renderOptions();
-
-  // expose helper
-  root.getSelected = () => value;
-  root.addEventListener('combobox:select', (ev) => console.log('Dipilih:', ev.detail));
-
-})();
+  // Klik luar untuk tutup
+  document.addEventListener("click", (e) => {
+    if (!selectButton.contains(e.target) && !selectMenu.contains(e.target)) {
+      selectMenu.classList.remove("scale-100", "opacity-100");
+      selectMenu.classList.add("scale-95", "opacity-0");
+      setTimeout(() => selectMenu.classList.add("hidden"), 200);
+    }
+  });
 </script>
+
+
 
 </body>
 </html>
