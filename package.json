@@ -1,5 +1,7 @@
 {
   "devDependencies": {
-    "js-beautify": "^1.15.4"
+    "js-beautify": "^1.15.4",
+    "prettier": "^3.6.2",
+    "prettier-plugin-organize-attributes": "^1.0.0"
   }
 }

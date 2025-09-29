@@ -249,4 +249,4 @@ if (nextSlideBtnM) {
     clearInterval(slideIntervalM);
     nextSlideM();
   });
-}
+} 

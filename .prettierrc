@@ -1,0 +1,8 @@
+{
+  "plugins": ["prettier-plugin-organize-attributes"],
+  "attributeGroups": [
+    "$DEFAULT"
+  ],
+  "keepClosingSlash": true,
+  "bracketSameLine": true
+}
