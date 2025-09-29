@@ -117,7 +117,7 @@
                     </div>
                     <div class="space-y-8">
                         <div data-slot="card"
-                            class="text-card-foreground flex flex-col gap-6 rounded-xl border py-6 backdrop-blur-md bg-white/10 border-white/20 shadow-xl"
+                            class="relative z-10 text-card-foreground flex flex-col gap-6 rounded-xl border py-6 backdrop-blur-md bg-white/10 border-white/20 shadow-xl"
                         >
                             <div data-slot="card-header"
                                 class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
@@ -610,7 +610,8 @@
 
     // Toggle dropdown with zoom animation
     selectButton.addEventListener("click", () => {
-        document.getElementById("community").style.zIndex = "-1";
+        // document.getElementById("community").style.zIndex = "-1";
+        // document.getElementById("community").style.zIndex = "0";
         if (selectMenu.classList.contains("hidden")) {
             selectMenu.classList.remove("hidden");
             requestAnimationFrame(() => {
@@ -620,7 +621,7 @@
         } else {
             selectMenu.classList.remove("scale-100", "opacity-100");
             selectMenu.classList.add("scale-95", "opacity-0");
-            setTimeout(() => {selectMenu.classList.add("hidden");document.getElementById("community").style.zIndex = "1";}, 200);
+            setTimeout(() => {selectMenu.classList.add("hidden")}, 200);
         }
     });
 
@@ -644,7 +645,7 @@
         if (!selectButton.contains(e.target) && !selectMenu.contains(e.target)) {
             selectMenu.classList.remove("scale-100", "opacity-100");
             selectMenu.classList.add("scale-95", "opacity-0");
-            setTimeout(() => {selectMenu.classList.add("hidden");document.getElementById("community").style.zIndex = "1";}, 200);
+            setTimeout(() => {selectMenu.classList.add("hidden");}, 200);
             
         }
     });
