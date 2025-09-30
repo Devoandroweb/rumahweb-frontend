@@ -69,7 +69,13 @@
         max-width: 1550px;
     }
 }
-
+@media (max-width: 640px) {
+  .container {
+      padding-right: 1rem;
+      padding-left: 1rem;
+      overflow-wrap: anywhere;
+  }
+}
 .carousel-perspective {
   perspective: 1000px;
   transform-style: preserve-3d;

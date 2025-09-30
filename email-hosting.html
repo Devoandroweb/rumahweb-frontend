@@ -13,547 +13,792 @@
 <body class="font-sans" style="padding: 2px;">
     <!-- NAVBAR -->
     <header class="sticky top-0 z-50 w-full border-b bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-        <div class="container flex h-16 items-center justify-between">
-            <!-- Logo -->
-            <div class="flex items-center gap-2">
-                <a class="flex items-center space-x-2" title="Rumahweb Indonesia" href="/">
-                    <img src="img/rumahweb-logo.svg" alt="Rumahweb Indonesia" class="h-10 w-auto">
-                </a>
+    <div class="container flex h-16 items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <a class="flex items-center space-x-2" title="Rumahweb Indonesia" href="/">
+          <img src="img/rumahweb-logo.svg" alt="Rumahweb Indonesia" class="h-10 w-auto">
+        </a>
+      </div>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-6">
+        <div class="relative group mega-menu-trigger">
+          <button class="text-base font-bold hover:text-primary transition-colors flex items-center gap-1">
+            Domain
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-chevron-down h-4 w-4 opacity-70 transition-transform">
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </button>
+          <div class="fixed left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-blue-100 p-6 transition-all duration-300 z-50 mega-menu-container hidden" style="top: 64px;">
+            <div class="container mx-auto">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Info Domain -->
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-800 mb-4">DOMAIN</h3>
+                  <p class="text-gray-600">
+                    Memiliki nama domain sangat penting sebagai branding digital, meningkatkan kepercayaan pelanggan, dan mendorong trafik bisnis. Daftarkan nama bisnis dan ide terbaik Anda sekarang!
+                  </p>
+                </div>
+                <!-- Menu Domain -->
+                <div class="space-y-6">
+                  <div class="flex gap-3">
+                    <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                      <img alt="Domain Icon" width="20" height="20" class="w-5 h-5" src="img/domain-icon.svg" style="filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
+                    </div>
+                    <div>
+                      <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="domain murah" href="/domain-murah.html">Beli Domain</a>
+                      <p class="text-gray-600 mb-2 text-sm">Bawa bisnis Anda #NaikLevel dengan mendaftarkan domain sebagai branding online bisnis Anda</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                      <img alt="Transfer Domain Icon" width="20" height="20" class="w-5 h-5" src="img/transfer-domain-icon.svg" style="filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
+                    </div>
+                    <div>
+                      <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Transfer Domain" href="https://www.rumahweb.com/transfer-domain/">Transfer Domain</a>
+                      <p class="text-gray-600 mb-2 text-sm">Transfer domain Anda ke Rumahweb. Mudah dan cepat dengan fitur pengelolaan domain lengkap</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                      <img alt="Link in Bio" width="20" height="20" class="w-5 h-5" src="img/link-in-bio.svg" style="filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
+                    </div>
+                    <div>
+                      <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Link in Bio" href="/microsite">Link Bio (gratis)</a>
+                      <p class="text-gray-600 mb-2 text-sm">Link in Bio gratis untuk media sosial menggunakan nama domain sendiri. Lebih keren!</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                      <img alt="Reseller Domain Icon" width="20" height="20" class="w-5 h-5" src="img/reseller-domain-icon.svg" style="filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
+                    </div>
+                    <div>
+                      <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Reseller Domain" href="https://www.digitalregistra.co.id">Reseller Domain</a>
+                      <p class="text-gray-600 mb-2 text-sm">Bergabung sebagai reseller domain dan dapatkan penghasilan tanpa batas!</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Promo Domain -->
+                <div class="bg-blue-50 p-5 rounded-xl">
+                  <h3 class="text-lg font-bold text-blue-600 mb-3">Promosi Domain</h3>
+                  <div class="space-y-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-blue-100">
+                      <div class="flex justify-between items-center mb-2">
+                        <span class="text-lg font-bold text-primary">.ID</span>
+                        <span class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded">HEMAT 0%</span>
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span class="text-gray-500 text-sm line-through">Rp 219.000</span>
+                        <span class="text-blue-600 font-bold">Rp 219.000/tahun</span>
+                      </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-blue-100">
+                      <div class="flex justify-between items-center mb-2">
+                        <span class="text-lg font-bold text-primary">.COM</span>
+                        <span class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded">HEMAT 34%</span>
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span class="text-gray-500 text-sm line-through">Rp 190.000</span>
+                        <span class="text-blue-600 font-bold">Rp 125.000/tahun</span>
+                      </div>
+                    </div>
+                    <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 py-2 w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-cyan-600 hover:to-blue-600 text-white">
+                      Lihat Semua Promosi
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- Desktop Navigation -->
-            <nav class="hidden md:flex items-center gap-6">
-                <!-- Domain Mega Menu -->
-                <div class="relative group mega-menu-trigger">
-                    <button class="text-base font-bold hover:text-blue-900 transition-colors flex items-center gap-1">
-                        Domain
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-chevron-down h-4 w-4 opacity-70 transition-transform">
-                            <path d="m6 9 6 6 6-6"></path>
-                        </svg>
-                    </button>
-                    <div class="fixed left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-blue-100 p-6 transition-all duration-300 z-50 mega-menu-container hidden"
-                        style="top: 64px;">
-                        <div class="container mx-auto">
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                                <!-- Info Domain -->
-                                <div>
-                                    <h3 class="text-2xl font-bold text-gray-800 mb-4">DOMAIN</h3>
-                                    <p class="text-gray-600">
-                                        Memiliki nama domain sangat penting sebagai branding digital, meningkatkan
-                                        kepercayaan pelanggan, dan mendorong trafik bisnis. Daftarkan nama bisnis dan
-                                        ide terbaik Anda sekarang!
-                                    </p>
-                                </div>
-                                <!-- Menu Domain -->
-                                <div class="space-y-6">
-                                    <div class="flex gap-3">
-                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
-                                            <img alt="Domain Icon" width="20" height="20" class="w-5 h-5"
-                                                src="img/domain-icon.svg"
-                                                style="filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
-                                        </div>
-                                        <div>
-                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block"
-                                                title="domain murah" href="/domain-murah.html">Beli Domain</a>
-                                            <p class="text-gray-600 mb-2 text-sm">Bawa bisnis Anda #NaikLevel dengan
-                                                mendaftarkan domain sebagai branding online bisnis Anda</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
-                                            <img alt="Transfer Domain Icon" width="20" height="20" class="w-5 h-5"
-                                                src="img/transfer-domain-icon.svg"
-                                                style="filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
-                                        </div>
-                                        <div>
-                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block"
-                                                title="Transfer Domain"
-                                                href="https://www.rumahweb.com/transfer-domain/">Transfer Domain</a>
-                                            <p class="text-gray-600 mb-2 text-sm">Transfer domain Anda ke Rumahweb.
-                                                Mudah dan cepat dengan fitur pengelolaan domain lengkap</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
-                                            <img alt="Link in Bio" width="20" height="20" class="w-5 h-5"
-                                                src="img/link-in-bio.svg"
-                                                style="filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
-                                        </div>
-                                        <div>
-                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block"
-                                                title="Link in Bio" href="/microsite">Link Bio (gratis)</a>
-                                            <p class="text-gray-600 mb-2 text-sm">Link in Bio gratis untuk media sosial
-                                                menggunakan nama domain sendiri. Lebih keren!</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
-                                            <img alt="Reseller Domain Icon" width="20" height="20" class="w-5 h-5"
-                                                src="img/reseller-domain-icon.svg"
-                                                style="filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
-                                        </div>
-                                        <div>
-                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block"
-                                                title="Reseller Domain"
-                                                href="https://www.digitalregistra.co.id">Reseller Domain</a>
-                                            <p class="text-gray-600 mb-2 text-sm">Bergabung sebagai reseller domain dan
-                                                dapatkan penghasilan tanpa batas!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Promo Domain -->
-                                <div class="bg-blue-50 p-5 rounded-xl">
-                                    <h3 class="text-lg font-bold text-blue-600 mb-3">Promosi Domain</h3>
-                                    <div class="space-y-4">
-                                        <div class="bg-white p-4 rounded-lg shadow-sm border border-blue-100">
-                                            <div class="flex justify-between items-center mb-2">
-                                                <span class="text-lg font-bold text-blue-900">.ID</span>
-                                                <span
-                                                    class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded">HEMAT
-                                                    0%</span>
-                                            </div>
-                                            <div class="flex items-center justify-between">
-                                                <span class="text-gray-500 text-sm line-through">Rp 219.000</span>
-                                                <span class="text-blue-600 font-bold">Rp 219.000/tahun</span>
-                                            </div>
-                                        </div>
-                                        <div class="bg-white p-4 rounded-lg shadow-sm border border-blue-100">
-                                            <div class="flex justify-between items-center mb-2">
-                                                <span class="text-lg font-bold text-blue-900">.COM</span>
-                                                <span
-                                                    class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded">HEMAT
-                                                    34%</span>
-                                            </div>
-                                            <div class="flex items-center justify-between">
-                                                <span class="text-gray-500 text-sm line-through">Rp 190.000</span>
-                                                <span class="text-blue-600 font-bold">Rp 125.000/tahun</span>
-                                            </div>
-                                        </div>
-                                        <button
-                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-blue-800 hover:bg-blue-800/90 h-10 px-4 py-2 w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-cyan-600 hover:to-blue-600 text-white"></button>
-                                        Lihat Semua Promosi
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+        <div class="relative group mega-menu-trigger">
+          <button class="text-base font-bold hover:text-primary transition-colors flex items-center gap-1">
+            Hosting
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-chevron-down h-4 w-4 opacity-70 transition-transform">
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </button>
+          <div class="fixed left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-blue-100 p-6 transition-all duration-300 z-50 mega-menu-container hidden" style="top: 64px;">
+            <div class="container mx-auto">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Info Hosting -->
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-800 mb-4">HOSTING</h3>
+                  <p class="text-gray-600">
+                    Web hosting adalah layanan untuk menyimpan website, email, dan aplikasi Anda di server yang selalu online agar dapat diakses kapan saja dan dari mana saja. Rumahweb menawarkan solusi lengkap mulai dari shared, cloud hosting, VPS, hingga dedicated server.
+                  </p>
                 </div>
-                <!-- Hosting Mega Menu -->
-                <div class="relative group mega-menu-trigger">
-                    <button class="text-base font-bold hover:text-blue-900 transition-colors flex items-center gap-1">
-                        Hosting
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-chevron-down h-4 w-4 opacity-70 transition-transform">
-                            <path d="m6 9 6 6 6-6"></path>
-                        </svg>
-                    </button>
-                    <div class="fixed left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-blue-100 p-6 transition-all duration-300 z-50 mega-menu-container hidden"
-                        style="top: 64px;">
-                        <div class="container mx-auto">
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                                <!-- Info Hosting -->
-                                <div>
-                                    <h3 class="text-2xl font-bold text-gray-800 mb-4">HOSTING</h3>
-                                    <p class="text-gray-600">
-                                        Web hosting adalah layanan untuk menyimpan website, email, dan aplikasi Anda di
-                                        server yang selalu online agar dapat diakses kapan saja dan dari mana saja.
-                                        Rumahweb menawarkan solusi lengkap mulai dari shared, cloud hosting, VPS, hingga
-                                        dedicated server.
-                                    </p>
-                                </div>
-                                <!-- Menu Hosting -->
-                                <div class="space-y-6">
-                                    <!-- Shared Hosting -->
-                                    <div class="flex gap-3">
-                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="lucide lucide-server h-5 w-5 text-blue-500">
-                                                <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
-                                                <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
-                                                <line x1="6" x2="6.01" y1="6" y2="6"></line>
-                                                <line x1="6" x2="6.01" y1="18" y2="18"></line>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <div class="flex items-center gap-2">
-                                                <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block"
-                                                    title="Hosting Murah" href="/hosting-murah">Shared Hosting</a>
-                                                <span
-                                                    class="bg-gradient-to-r from-yellow-500 to-amber-500 text-white text-xs font-normal px-1.5 py-0.5 rounded-full">PROMO</span>
-                                            </div>
-                                            <p class="text-gray-600 mb-2 text-sm">
-                                                Hosting Indonesia terbaik dengan performa tinggi dan harga terjangkau
-                                                untuk website personal dan bisnis
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- Cloud Hosting -->
-                                    <div class="flex gap-3">
-                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="lucide lucide-cloud h-5 w-5 text-blue-500">
-                                                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <div class="flex items-center gap-2">
-                                                <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block"
-                                                    title="Cloud Hosting" href="/cloud-hosting">Cloud Hosting</a>
-                                                <span
-                                                    class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-xs font-normal px-1.5 py-0.5 rounded-full">POWERFUL</span>
-                                            </div>
-                                            <p class="text-gray-600 mb-2 text-sm">
-                                                Hosting dengan dedicated resource untuk website dengan traffic tinggi
-                                                dan aplikasi yang membutuhkan performa maksimal
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- WordPress Hosting -->
-                                    <div class="flex gap-3">
-                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" class="text-blue-500">
-                                                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"></path>
-                                                <path d="M12 2a10 10 0 0 1 10 10"></path>
-                                                <path d="M12 12v-2"></path>
-                                                <path d="M12 12h2"></path>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <div class="flex items-center gap-2">
-                                                <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block"
-                                                    title="WordPress Hosting"
-                                                    href="https://www.rumahweb.com/wordpress-hosting/">WordPress
-                                                    Hosting</a>
-                                                <span
-                                                    class="bg-gradient-to-r from-green-500 to-teal-500 text-white text-xs font-normal px-1.5 py-0.5 rounded-full">EASY</span>
-                                            </div>
-                                            <p class="text-gray-600 mb-2 text-sm">
-                                                Hosting yang dioptimalkan khusus untuk WordPress dengan performa dan
-                                                keamanan terbaik
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Menu VPS & Dedicated -->
-                                <div class="space-y-6">
-                                    <!-- VPS -->
-                                    <div class="flex gap-3">
-                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="lucide lucide-hard-drive h-5 w-5 text-blue-500">
-                                                <line x1="22" x2="2" y1="12" y2="12"></line>
-                                                <path
-                                                    d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z">
-                                                </path>
-                                                <line x1="6" x2="6.01" y1="16" y2="16"></line>
-                                                <line x1="10" x2="10.01" y1="16" y2="16"></line>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <div class="flex items-center gap-2">
-                                                <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block"
-                                                    title="VPS Murah" href="https://www.rumahweb.com/vps-murah/">VPS</a>
-                                                <span
-                                                    class="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-xs font-normal px-1.5 py-0.5 rounded-full">BEST
-                                                    SELLER</span>
-                                            </div>
-                                            <p class="text-gray-600 mb-2 text-sm">
-                                                Server virtual dengan performa tinggi dan akses root penuh untuk
-                                                kebutuhan aplikasi yang lebih kompleks
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- VPS Alibaba -->
-                                    <div class="flex gap-3">
-                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="lucide lucide-cloud h-5 w-5 text-blue-500">
-                                                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block"
-                                                title="VPS Alibaba"
-                                                href="https://www.rumahweb.com/vps-alibaba-cloud/">VPS Alibaba</a>
-                                            <p class="text-gray-600 mb-2 text-sm">
-                                                VPS dengan infrastruktur Alibaba Cloud yang handal, stabil, dan tersedia
-                                                di berbagai region
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- Dedicated Server -->
-                                    <div class="flex gap-3">
-                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="lucide lucide-server h-5 w-5 text-blue-500">
-                                                <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
-                                                <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
-                                                <line x1="6" x2="6.01" y1="6" y2="6"></line>
-                                                <line x1="6" x2="6.01" y1="18" y2="18"></line>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block"
-                                                title="Dedicated Server"
-                                                href="https://www.rumahweb.com/dedicated-server/">Dedicated Server</a>
-                                            <p class="text-gray-600 mb-2 text-sm">
-                                                Server fisik eksklusif dengan performa maksimal untuk aplikasi berat dan
-                                                traffic tinggi
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Menu Hosting -->
+                <div class="space-y-6">
+                  <div class="flex gap-3">
+                    <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-server h-5 w-5 text-blue-500">
+                        <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                        <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                        <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                        <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                      </svg>
                     </div>
-                </div>
-                <!-- Website Mega Menu -->
-                <div class="relative group mega-menu-trigger">
-                    <button class="text-base font-bold hover:text-blue-900 transition-colors flex items-center gap-1">
-                        Website
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-chevron-down h-4 w-4 opacity-70 transition-transform">
-                            <path d="m6 9 6 6 6-6"></path>
-                        </svg>
-                    </button>
-                    <div class="fixed left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-blue-100 p-6 transition-all duration-300 z-50 mega-menu-container hidden"
-                        style="top: 64px;">
-                        <div class="container mx-auto">
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                                <!-- Info Website -->
-                                <div>
-                                    <h3 class="text-2xl font-bold text-gray-800 mb-4">WEBSITE</h3>
-                                    <p class="text-gray-600">
-                                        Website adalah wajah bisnis Anda di dunia digital. Dengan website yang
-                                        profesional, Anda dapat menjangkau pelanggan lebih luas, membangun kredibilitas,
-                                        dan meningkatkan penjualan. Rumahweb menyediakan berbagai solusi pembuatan
-                                        website yang sesuai dengan kebutuhan dan anggaran Anda.
-                                    </p>
-                                </div>
-                                <!-- Menu Website -->
-                                <div class="space-y-6">
-                                    <div class="flex gap-3">
-                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="lucide lucide-sparkles h-5 w-5 text-blue-500">
-                                                <path
-                                                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
-                                                </path>
-                                                <path d="M20 3v4"></path>
-                                                <path d="M22 5h-4"></path>
-                                                <path d="M4 17v2"></path>
-                                                <path d="M5 18H3"></path>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block"
-                                                title="AI Website Builder" href="/ai-website-builder">AI Website
-                                                Builder</a>
-                                            <p class="text-gray-600 mb-2 text-sm">Buat website profesional dalam
-                                                hitungan menit dengan bantuan AI pintar</p>
-                                            <a class="mt-4 inline-block w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-red-500 hover:to-orange-500 text-white font-semibold py-2.5 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-sm"
-                                                title="Coba Buat Website dengan AI"
-                                                href="https://www.rumahweb.com/ai-website-builder/">Coba Buat
-                                                Website</a>
-                                        </div>
-                                    </div>
-                                    <div class="bg-blue-50 p-4 rounded-lg">
-                                        <h4 class="font-medium text-blue-700 mb-2">Keunggulan AI Website Builder</h4>
-                                        <ul class="space-y-2">
-                                            <li class="flex items-start gap-2">
-                                                <span class="text-green-500 mt-1">✓</span>
-                                                <span class="text-gray-600 text-sm">Buat website & konten dalam hitungan
-                                                    detik</span>
-                                            </li>
-                                            <li class="flex items-start gap-2">
-                                                <span class="text-green-500 mt-1">✓</span>
-                                                <span class="text-gray-600 text-sm">Desain profesional otomatis</span>
-                                            </li>
-                                            <li class="flex items-start gap-2">
-                                                <span class="text-green-500 mt-1">✓</span>
-                                                <span class="text-gray-600 text-sm">Tanpa perlu koding</span>
-                                            </li>
-                                            <li class="flex items-start gap-2">
-                                                <span class="text-green-500 mt-1">✓</span>
-                                                <span class="text-gray-600 text-sm">SEO-friendly</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- Menu Lain Website -->
-                                <div class="space-y-6">
-                                    <div class="flex gap-3">
-                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="lucide lucide-paintbrush h-5 w-5 text-blue-500">
-                                                <path d="m14.622 17.897-10.68-2.913"></path>
-                                                <path
-                                                    d="M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z">
-                                                </path>
-                                                <path
-                                                    d="M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block"
-                                                title="Website Builder"
-                                                href="https://www.rumahweb.com/website-builder/">Website Builder</a>
-                                            <p class="text-gray-600 mb-2 text-sm">Membuat website dengan drag and drop.
-                                                Pilih desain dan ekspresikan dirimu</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" class="text-blue-500">
-                                                <path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7"></path>
-                                                <rect width="20" height="5" x="2" y="2" rx="1"></rect>
-                                                <path d="M12 12v5"></path>
-                                                <path d="M10 14h4"></path>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block"
-                                                title="Jasa Pembuatan Website"
-                                                href="https://www.rumahweb.com/jasa-pembuatan-website/">Jasa Pembuatan
-                                                Website</a>
-                                            <p class="text-gray-600 mb-2 text-sm">Desain website profesional oleh tim
-                                                Rumahweb untuk bisnis Anda</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" class="text-blue-500">
-                                                <path d="m3 16 4 4 4-4"></path>
-                                                <path d="M7 20V4"></path>
-                                                <rect width="4" height="6" x="15" y="4" rx="2"></rect>
-                                                <rect width="4" height="6" x="15" y="14" rx="2"></rect>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block"
-                                                title="Ranking Coach"
-                                                href="https://www.rumahweb.com/rankingcoach/">Ranking Coach</a>
-                                            <p class="text-gray-600 mb-2 text-sm">Tingkatkan peringkat website Anda di
-                                                mesin pencari Google</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex gap-3">
-                                        <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="lucide lucide-shield h-5 w-5 text-blue-500">
-                                                <path
-                                                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block"
-                                                title="Website Security (SSL)"
-                                                href="https://www.rumahweb.com/ssl-murah/">Website Security (SSL)</a>
-                                            <p class="text-gray-600 mb-2 text-sm">Amankan website dan data pelanggan
-                                                Anda dengan sertifikat SSL</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div>
+                      <div class="flex items-center gap-2">
+                        <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Hosting Murah" href="/hosting-murah">Shared Hosting</a>
+                        <span class="bg-gradient-to-r from-yellow-500 to-amber-500 text-white text-xs font-normal px-1.5 py-0.5 rounded-full">PROMO</span>
+                      </div>
+                      <p class="text-gray-600 mb-2 text-sm">
+                        Hosting Indonesia terbaik dengan performa tinggi dan harga terjangkau untuk website personal dan bisnis
+                      </p>
                     </div>
-                </div>
-                <!-- Semua Layanan Mega Menu -->
-                <div class="relative group mega-menu-trigger">
-                    <button class="text-base font-bold hover:text-blue-900 transition-colors flex items-center gap-1">
-                        Semua Layanan
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-chevron-down h-4 w-4 opacity-70 transition-transform">
-                            <path d="m6 9 6 6 6-6"></path>
-                        </svg>
-                    </button>
-                    <div class="fixed left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-blue-100 p-6 transition-all duration-300 z-50 mega-menu-container hidden"
-                        style="top: 64px;">
-                        <!-- ... (content unchanged for brevity) ... -->
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud h-5 w-5 text-blue-500">
+                        <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                      </svg>
                     </div>
+                    <div>
+                      <div class="flex items-center gap-2">
+                        <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Cloud Hosting" href="/cloud-hosting">Cloud Hosting</a>
+                        <span class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-xs font-normal px-1.5 py-0.5 rounded-full">POWERFUL</span>
+                      </div>
+                      <p class="text-gray-600 mb-2 text-sm">
+                        Hosting dengan dedicated resource untuk website dengan traffic tinggi dan aplikasi yang membutuhkan performa maksimal
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500">
+                        <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"></path>
+                        <path d="M12 2a10 10 0 0 1 10 10"></path>
+                        <path d="M12 12v-2"></path>
+                        <path d="M12 12h2"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="flex items-center gap-2">
+                        <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="WordPress Hosting" href="https://www.rumahweb.com/wordpress-hosting/">WordPress Hosting</a>
+                        <span class="bg-gradient-to-r from-green-500 to-teal-500 text-white text-xs font-normal px-1.5 py-0.5 rounded-full">EASY</span>
+                      </div>
+                      <p class="text-gray-600 mb-2 text-sm">
+                        Hosting yang dioptimalkan khusus untuk WordPress dengan performa dan keamanan terbaik
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <a class="text-base font-bold text-white bg-gradient-to-r from-orange-500 to-red-500 hover:from-red-500 hover:to-orange-500 px-4 py-2 rounded-full flex items-center transition-all duration-300 shadow-sm hover:shadow-md"
-                    href="/promosi">
-                    Promo
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-gift ml-1 h-4 w-4 text-white">
-                        <rect x="3" y="8" width="18" height="4" rx="1"></rect>
-                        <path d="M12 8v13"></path>
-                        <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path>
-                        <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path>
-                    </svg>
-                </a>
-            </nav>
-            <!-- Right Actions -->
-            <div class="flex items-center gap-4">
-                <a class="text-sm font-bold hover:text-blue-900 transition-colors hidden sm:block flex items-center gap-1"
-                    title="Support Rumahweb" href=".html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-headphones h-4 w-4">
-                        <path
-                            d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3">
-                        </path>
-                    </svg>
-                    Support
-                </a>
-                <button
-                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-blue-600 hover:bg-blue-700 text-white transition-colors text-sm font-bold px-4 py-2 rounded-md h-auto">
-                    <a href="https://new.clientzone.rumahweb.com/login">LOGIN</a>
-                </button>
-                <button class="md:hidden text-slate-600 hover:text-blue-900 transition-colors"
-                    aria-label="Toggle mobile menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-menu">
-                        <line x1="4" x2="20" y1="12" y2="12"></line>
-                        <line x1="4" x2="20" y1="6" y2="6"></line>
-                        <line x1="4" x2="20" y1="18" y2="18"></line>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-x hidden">
-                        <path d="M18 6 6 18"></path>
-                        <path d="m6 6 12 12"></path>
-                    </svg>
-                </button>
+                <!-- Menu VPS & Dedicated -->
+                <div class="space-y-6">
+                  <div class="flex gap-3">
+                    <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hard-drive h-5 w-5 text-blue-500">
+                        <line x1="22" x2="2" y1="12" y2="12"></line>
+                        <path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
+                        <line x1="6" x2="6.01" y1="16" y2="16"></line>
+                        <line x1="10" x2="10.01" y1="16" y2="16"></line>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="flex items-center gap-2">
+                        <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="VPS Murah" href="https://www.rumahweb.com/vps-murah/">VPS</a>
+                        <span class="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-xs font-normal px-1.5 py-0.5 rounded-full">BEST SELLER</span>
+                      </div>
+                      <p class="text-gray-600 mb-2 text-sm">
+                        Server virtual dengan performa tinggi dan akses root penuh untuk kebutuhan aplikasi yang lebih kompleks
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud h-5 w-5 text-blue-500">
+                        <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="VPS Alibaba" href="https://www.rumahweb.com/vps-alibaba-cloud/">VPS Alibaba</a>
+                      <p class="text-gray-600 mb-2 text-sm">
+                        VPS dengan infrastruktur Alibaba Cloud yang handal, stabil, dan tersedia di berbagai region
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-server h-5 w-5 text-blue-500">
+                        <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                        <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                        <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                        <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                      </svg>
+                    </div>
+                    <div>
+                      <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Dedicated Server" href="https://www.rumahweb.com/dedicated-server/">Dedicated Server</a>
+                      <p class="text-gray-600 mb-2 text-sm">
+                        Server fisik eksklusif dengan performa maksimal untuk aplikasi berat dan traffic tinggi
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Mobile Menu (unchanged for brevity) -->
-        <div class="md:hidden bg-white border-t mobile-menu hidden">
-            <!-- ... (content unchanged for brevity) ... -->
+        <div class="relative group mega-menu-trigger">
+          <button class="text-base font-bold hover:text-primary transition-colors flex items-center gap-1">
+            Website
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-chevron-down h-4 w-4 opacity-70 transition-transform">
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </button>
+          <div class="fixed left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-blue-100 p-6 transition-all duration-300 z-50 mega-menu-container hidden" style="top: 64px;">
+            <div class="container mx-auto">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Info Website -->
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-800 mb-4">WEBSITE</h3>
+                  <p class="text-gray-600">
+                    Website adalah wajah bisnis Anda di dunia digital. Dengan website yang profesional, Anda dapat menjangkau pelanggan lebih luas, membangun kredibilitas, dan meningkatkan penjualan. Rumahweb menyediakan berbagai solusi pembuatan website yang sesuai dengan kebutuhan dan anggaran Anda.
+                  </p>
+                </div>
+                <!-- Menu Website -->
+                <div class="space-y-6">
+                  <div class="flex gap-3">
+                    <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-5 w-5 text-blue-500">
+                        <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path>
+                        <path d="M20 3v4"></path>
+                        <path d="M22 5h-4"></path>
+                        <path d="M4 17v2"></path>
+                        <path d="M5 18H3"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="AI Website Builder" href="/ai-website-builder">AI Website Builder</a>
+                      <p class="text-gray-600 mb-2 text-sm">Buat website profesional dalam hitungan menit dengan bantuan AI pintar</p>
+                      <a class="mt-4 inline-block w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-red-500 hover:to-orange-500 text-white font-semibold py-2.5 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-sm" title="Coba Buat Website dengan AI" href="https://www.rumahweb.com/ai-website-builder/">Coba Buat Website</a>
+                    </div>
+                  </div>
+                  <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="font-medium text-blue-700 mb-2">Keunggulan AI Website Builder</h4>
+                    <ul class="space-y-2">
+                      <li class="flex items-start gap-2">
+                        <span class="text-green-500 mt-1">✓</span>
+                        <span class="text-gray-600 text-sm">Buat website &amp; konten dalam hitungan detik</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-green-500 mt-1">✓</span>
+                        <span class="text-gray-600 text-sm">Desain profesional otomatis</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-green-500 mt-1">✓</span>
+                        <span class="text-gray-600 text-sm">Tanpa perlu koding</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="text-green-500 mt-1">✓</span>
+                        <span class="text-gray-600 text-sm">SEO-friendly</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Menu Lain Website -->
+                <div class="space-y-6">
+                  <div class="flex gap-3">
+                    <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paintbrush h-5 w-5 text-blue-500">
+                        <path d="m14.622 17.897-10.68-2.913"></path>
+                        <path d="M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z"></path>
+                        <path d="M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Website Builder" href="https://www.rumahweb.com/website-builder/">Website Builder</a>
+                      <p class="text-gray-600 mb-2 text-sm">Membuat website dengan drag and drop. Pilih desain dan ekspresikan dirimu</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500">
+                        <path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7"></path>
+                        <rect width="20" height="5" x="2" y="2" rx="1"></rect>
+                        <path d="M12 12v5"></path>
+                        <path d="M10 14h4"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Jasa Pembuatan Website" href="https://www.rumahweb.com/jasa-pembuatan-website/">Jasa Pembuatan Website</a>
+                      <p class="text-gray-600 mb-2 text-sm">Desain website profesional oleh tim Rumahweb untuk bisnis Anda</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500">
+                        <path d="m3 16 4 4 4-4"></path>
+                        <path d="M7 20V4"></path>
+                        <rect width="4" height="6" x="15" y="4" rx="2"></rect>
+                        <rect width="4" height="6" x="15" y="14" rx="2"></rect>
+                      </svg>
+                    </div>
+                    <div>
+                      <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Ranking Coach" href="https://www.rumahweb.com/rankingcoach/">Ranking Coach</a>
+                      <p class="text-gray-600 mb-2 text-sm">Tingkatkan peringkat website Anda di mesin pencari Google</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="text-[#3B81F6] flex-shrink-0 pt-1.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield h-5 w-5 text-blue-500">
+                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <a class="text-lg font-bold text-blue-500 mb-1 hover:underline block" title="Website Security (SSL)" href="https://www.rumahweb.com/ssl-murah/">Website Security (SSL)</a>
+                      <p class="text-gray-600 mb-2 text-sm">Amankan website dan data pelanggan Anda dengan sertifikat SSL</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
+        <div class="relative group mega-menu-trigger">
+          <button class="text-base font-bold hover:text-primary transition-colors flex items-center gap-1">
+            Semua Layanan
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-chevron-down h-4 w-4 opacity-70 transition-transform">
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </button>
+          <div class="fixed left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-blue-100 p-6 transition-all duration-300 z-50 mega-menu-container hidden" style="top: 64px;">
+            <div class="container mx-auto">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- DOMAIN -->
+                <div class="space-y-6">
+                  <h4 class="text-lg font-bold text-gray-800 mb-3">DOMAIN</h4>
+                  <div class="space-y-3">
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe h-4 w-4 text-blue-500">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                          <path d="M2 12h20"></path>
+                        </svg>
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="Domain Murah" href="https://www.rumahweb.com/domain-murah/">Beli Domain</a>
+                    </div>
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <img alt="Transfer Domain Icon" class="w-4 h-4" src="img/transfer-domain-icon.svg" style="filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="Transfer Domain" href="https://www.rumahweb.com/transfer-domain/">Transfer Domain</a>
+                    </div>
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <img alt="Reseller Domain Icon" class="w-4 h-4" src="img/reseller-domain-icon.svg" style="filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="Reseller Domain" href="https://www.digitalregistra.co.id">Reseller Domain</a>
+                    </div>
+                  </div>
+                  <h4 class="text-lg font-bold text-gray-800 mb-3 mt-6">WEBSITE</h4>
+                  <div class="space-y-3">
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-4 w-4 text-blue-500">
+                          <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path>
+                          <path d="M20 3v4"></path>
+                          <path d="M22 5h-4"></path>
+                          <path d="M4 17v2"></path>
+                          <path d="M5 18H3"></path>
+                        </svg>
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="AI Website Builder" href="https://www.rumahweb.com/ai-website-builder/">AI Website Builder</a>
+                    </div>
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paintbrush h-4 w-4 text-blue-500">
+                          <path d="m14.622 17.897-10.68-2.913"></path>
+                          <path d="M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z"></path>
+                          <path d="M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15"></path>
+                        </svg>
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="Website Builder" href="https://www.rumahweb.com/website-builder/">Website Builder</a>
+                    </div>
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-server h-4 w-4 text-blue-500">
+                          <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                          <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                          <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                          <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                        </svg>
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="Jasa Pembuatan Website" href="https://www.rumahweb.com/jasa-pembuatan-website/">Jasa Pembuatan Website</a>
+                    </div>
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield h-4 w-4 text-blue-500">
+                          <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                        </svg>
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="SSL Murah" href="https://www.rumahweb.com/ssl-murah/">Sertifikat SSL</a>
+                    </div>
+                  </div>
+                  <h4 class="text-lg font-bold text-gray-800 mb-3 mt-6">MARKETING</h4>
+                  <div class="space-y-3">
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500 h-4 w-4">
+                          <path d="m3 16 4 4 4-4"></path>
+                          <path d="M7 20V4"></path>
+                          <rect width="4" height="6" x="15" y="4" rx="2"></rect>
+                          <rect width="4" height="6" x="15" y="14" rx="2"></rect>
+                        </svg>
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="RankingCoach" href="https://www.rumahweb.com/rankingcoach/">RankingCoach</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- HOSTING -->
+                <div class="space-y-6">
+                  <h4 class="text-lg font-bold text-gray-800 mb-3">HOSTING</h4>
+                  <div class="space-y-3">
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-server h-4 w-4 text-blue-500">
+                          <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                          <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                          <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                          <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                        </svg>
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="hosting murah" href="https://www.rumahweb.com/hosting-murah/">Shared Hosting</a>
+                    </div>
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud h-4 w-4 text-blue-500">
+                          <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                        </svg>
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="Cloud Hosting" href="https://www.rumahweb.com/cloud-hosting/">Cloud Hosting</a>
+                    </div>
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500 h-4 w-4">
+                          <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"></path>
+                          <path d="M12 2a10 10 0 0 1 10 10"></path>
+                          <path d="M12 12v-2"></path>
+                          <path d="M12 12h2"></path>
+                        </svg>
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="WordPress Hosting" href="https://www.rumahweb.com/wordpress-hosting/">WordPress Hosting</a>
+                    </div>
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hard-drive h-4 w-4 text-blue-500">
+                          <line x1="22" x2="2" y1="12" y2="12"></line>
+                          <path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
+                          <line x1="6" x2="6.01" y1="16" y2="16"></line>
+                          <line x1="10" x2="10.01" y1="16" y2="16"></line>
+                        </svg>
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="VPS Murah" href="https://www.rumahweb.com/vps-murah/">VPS</a>
+                    </div>
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud h-4 w-4 text-blue-500">
+                          <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                        </svg>
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="VPS Alibaba" href="https://www.rumahweb.com/vps-alibaba-cloud/">VPS Alibaba</a>
+                    </div>
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-server h-4 w-4 text-blue-500">
+                          <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                          <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                          <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                          <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                        </svg>
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="Dedicated Server" href="https://www.rumahweb.com/dedicated-server/">Dedicated Server</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- EMAIL & SECURITY -->
+                <div class="space-y-6">
+                  <h4 class="text-lg font-bold text-gray-800 mb-3">EMAIL</h4>
+                  <div class="space-y-3">
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <img alt="Titan Mail" class="w-3 h-3" src="img/paper-plane-icon-white.svg" style="filter: invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="Email Bisnis" href="https://www.rumahweb.com/email-bisnis/">Email Bisnis</a>
+                    </div>
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <img alt="Google" class="w-3 h-3" src="img/google-white-icon.svg" style="filter: invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="Google Workspace" href="https://www.rumahweb.com/google-workspace/">Google Workspace</a>
+                    </div>
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="h-3 w-3" style="filter: invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
+                          <rect x="4" y="4" width="7" height="7" fill="currentColor"></rect>
+                          <rect x="13" y="4" width="7" height="7" fill="currentColor"></rect>
+                          <rect x="4" y="13" width="7" height="7" fill="currentColor"></rect>
+                          <rect x="13" y="13" width="7" height="7" fill="currentColor"></rect>
+                        </svg>
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="Microsoft 365" href="https://www.rumahweb.com/microsoft-365/">Microsoft 365</a>
+                    </div>
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3 w-3" style="filter: invert(43%) sepia(93%) saturate(1752%) hue-rotate(203deg) brightness(99%) contrast(96%);">
+                          <path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 0 1.2.4"></path>
+                          <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"></path>
+                          <path d="M10 2v7l4-4"></path>
+                          <path d="M14 5v4"></path>
+                        </svg>
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="OX Mail" href="https://www.rumahweb.com/email-perusahaan/">OX Mail</a>
+                    </div>
+                  </div>
+                  <h4 class="text-lg font-bold text-gray-800 mb-3 mt-6">SECURITY</h4>
+                  <div class="space-y-3">
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database h-4 w-4 text-blue-500">
+                          <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                          <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                          <path d="M3 12A9 3 0 0 0 21 12"></path>
+                        </svg>
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="Acronis Backup" href="https://www.rumahweb.com/acronis-backup/">Acronis Backup</a>
+                    </div>
+                    <div class="flex gap-3">
+                      <div class="text-[#3B81F6] flex-shrink-0 pt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check h-4 w-4 text-blue-500">
+                          <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                          <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+                      </div>
+                      <a class="text-sm font-medium text-blue-500 hover:underline block" title="Acronis Endpoint Protection" href="https://www.rumahweb.com/acronis-endpoint/">Acronis Endpoint Protection</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="text-base font-bold text-white bg-gradient-to-r from-orange-500 to-red-500 hover:from-red-500 hover:to-orange-500 px-4 py-2 rounded-full flex items-center transition-all duration-300 shadow-sm hover:shadow-md"
+          href="/promosi">
+          Promo
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-gift ml-1 h-4 w-4 text-white">
+            <rect x="3" y="8" width="18" height="4" rx="1"></rect>
+            <path d="M12 8v13"></path>
+            <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path>
+            <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path>
+          </svg>
+        </a>
+      </nav>
+      <!-- Right Actions -->
+      <div class="flex items-center gap-4">
+        <a
+          class="text-sm font-bold hover:text-primary transition-colors hidden sm:block flex items-center gap-1"
+          title="Support Rumahweb" href="/support.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="lucide lucide-headphones h-4 w-4">
+            <path
+              d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3">
+            </path>
+          </svg>
+          Support
+        </a>
+        <button
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-blue-600 hover:bg-blue-700 text-white transition-colors text-sm font-bold px-4 py-2 rounded-md h-auto">
+          <a href="https://new.clientzone.rumahweb.com/login">LOGIN</a>
+        </button>
+        <button
+          class="md:hidden text-slate-600 hover:text-primary transition-colors"
+          aria-label="Toggle mobile menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-x hidden">
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="md:hidden bg-white border-t mobile-menu hidden">
+      <div class="container py-4 space-y-3">
+      <div class="space-y-1 mobile-menu-trigger">
+        <div class="flex items-center justify-between ">
+        <button class="block py-2 text-base text-slate-600 font-bold hover:text-primary transition-colors w-full text-left">
+          Domain
+        </button>
+        <button class="p-1 text-slate-500 hover:text-primary icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+          <path d="m6 9 6 6 6-6"></path>
+          </svg>
+        </button>
+        </div>
+        <div class="pl-4 pb-2 space-y-2 mobile-menu-container hidden">
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors" href="/domain-murah">
+            Beli Domain
+          </a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors" href="/domain/reseller">
+            Reseller Domain
+          </a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors" href="/domain/transfer">
+            Transfer Domain
+          </a>
+        </div>
+      </div>
+      <div class="space-y-1 mobile-menu-trigger">
+        <div class="flex items-center justify-between">
+        <button class="block py-2 text-base text-slate-600 font-bold hover:text-primary transition-colors w-full text-left">
+          Hosting
+        </button>
+        <button class="p-1 text-slate-500 hover:text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+          <path d="m6 9 6 6 6-6"></path>
+          </svg>
+        </button>
+        </div>
+        <div class="pl-4 pb-2 space-y-2 mobile-menu-container hidden">
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors" href="/hosting-murah">
+            Shared Hosting
+          </a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors" href="/cloud-hosting">
+            Cloud Hosting
+          </a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors" href="/wordpress-hosting">
+            WordPress Hosting
+          </a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors" href="/vps-murah">
+            VPS
+          </a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors" href="/vps-alibaba-cloud">
+            VPS Alibaba
+          </a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors" href="/dedicated-server">
+            Dedicated Server
+          </a>
+        </div>
+      </div>
+      <div class="space-y-1 mobile-menu-trigger">
+        <div class="flex items-center justify-between">
+        <button class="block py-2 text-base text-slate-600 font-bold hover:text-primary transition-colors w-full text-left">
+          Website
+        </button>
+        <button class="p-1 text-slate-500 hover:text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+          <path d="m6 9 6 6 6-6"></path>
+          </svg>
+        </button>
+        </div>
+        <div class="pl-4 pb-2 space-y-2 mobile-menu-container hidden">
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors" href="/ai-website-builder">
+            AI Website Builder
+          </a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors" href="/website-builder">
+            Website Builder
+          </a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors" href="/jasa-pembuatan-website">
+            Jasa Pembuatan Website
+          </a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors" href="/ranking-coach">
+            Ranking Coach
+          </a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors" href="/ssl-murah">
+            Website Security (SSL)
+          </a>
+        </div>
+      </div>
+      <div class="space-y-1 mobile-menu-trigger">
+        <div class="flex items-center justify-between">
+        <button class="block py-2 text-base text-slate-600 font-bold hover:text-primary transition-colors w-full text-left">
+          Semua Layanan
+        </button>
+        <button class="p-1 text-slate-500 hover:text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-5 w-5 transition-transform">
+          <path d="m6 9 6 6 6-6"></path>
+          </svg>
+        </button>
+        </div>
+        <div class="pl-4 pb-2 space-y-2 mobile-menu-container hidden">
+          <div class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 mt-3">Domain</div>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/domain-murah">Beli Domain</a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/transfer-domain">Transfer Domain</a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" title="Reseller Domain" href="https://www.digitalregistra.co.id">Reseller Domain</a>
+
+          <div class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 mt-3">Website</div>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/ai-website-builder">AI Website Builder</a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/website-builder">Website Builder</a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/jasa-pembuatan-website">Jasa Pembuatan Website</a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/ssl-murah">SSL Certificates</a>
+
+          <div class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 mt-3">Marketing</div>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/rankingcoach">Ranking Coach</a>
+
+          <div class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 mt-3">Hosting</div>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/hosting-murah">Shared Hosting</a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/cloud-hosting">Cloud Hosting</a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/wordpress-hosting">WordPress Hosting</a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/vps-murah">VPS</a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/vps-alibaba-cloud">VPS Alibaba</a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/dedicated-server">Dedicated Server</a>
+
+          <div class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 mt-3">Email</div>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/email-bisnis">Business Email</a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/google-workspace">Google Workspace</a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/microsoft-365">Microsoft 365</a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/email-perusahaan">OX Mail</a>
+
+          <div class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 mt-3">Security</div>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/acronis-backup">Acronis Backup</a>
+          <a class="block py-1 text-sm text-slate-600 hover:text-primary transition-colors pl-2" href="/acronis-endpoint">Acronis Endpoint Protection</a>
+        </div>
+      </div>
+      <a class="block py-2 text-base bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-full px-4 flex items-center w-fit" href="/promo">
+        Promo
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gift ml-1 h-4 w-4 text-white">
+        <rect x="3" y="8" width="18" height="4" rx="1"></rect>
+        <path d="M12 8v13"></path>
+        <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path>
+        <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path>
+        </svg>
+      </a>
+      </div>
+      <div class="container py-4 space-y-3 border-t border-gray-100 mt-2">
+      <div class="flex gap-4 items-center">
+        <a class="block py-2 text-sm text-slate-600 hover:text-primary transition-colors font-bold flex items-center gap-2" title="Support Rumahweb" href="/support.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones h-4 w-4">
+          <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
+        </svg>
+        Support
+        </a>
+        <a class="block py-2 text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 rounded-lg font-bold text-center" href="https://new.clientzone.rumahweb.com/login">
+        LOGIN
+        </a>
+      </div>
+      </div>
+    </div>
+  </header>
 
     <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-800 to-blue-700 relative z-0">
         <div class="max-w-7xl mx-auto">

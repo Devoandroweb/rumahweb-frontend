@@ -8,3 +8,11 @@ window.addEventListener('scroll', function () {
         nav.classList.add('bg-transparent');
     }
 });
+document.getElementById('burger-menu').addEventListener('click', function () {
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenu.hasAttribute('hidden')) {
+        mobileMenu.removeAttribute('hidden');
+    } else {
+        mobileMenu.setAttribute('hidden', '');
+    }
+});

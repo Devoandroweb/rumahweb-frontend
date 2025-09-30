@@ -22,35 +22,64 @@
 <body class="font-sans bg-gradient-to-br from-blue-900 via-blue-800 to-purple-800">
 
     <div class="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-lime-400">
-        <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent sticky w-full border-b border-white/30 bg-white/10 backdrop-blur supports-[backdrop-filter]:bg-white/10">
+        <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
             <div class="container-nav mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between h-16">
-                    <div class="flex-shrink-0"><a
-                            class="text-2xl font-black text-white font-[family-name:var(--font-montserrat)]"
-                            href="/">Jogja<span class="text-lime-400">{DevDay}</span></a></div>
-                    <div class="hidden md:block">
-                        <div class="ml-10 flex items-baseline space-x-8"><a
-                                class="text-white hover:text-lime-400 px-3 py-2 text-sm font-[family-name:var(--font-open-sans)] transition-colors font-bold"
-                                href="/">Home</a><a
-                                class="hover:text-lime-400 px-3 py-2 text-sm font-[family-name:var(--font-open-sans)] transition-colors text-white font-bold"
-                                href="/agenda">Agenda</a><a
-                                class="hover:text-lime-400 px-3 py-2 text-sm font-[family-name:var(--font-open-sans)] transition-colors font-bold text-white"
-                                href="/speakers">Speakers</a><a
-                                class="hover:text-lime-400 px-3 py-2 text-sm font-[family-name:var(--font-open-sans)] transition-colors font-bold text-white"
-                                href="/location">Location</a><a
-                                class="hover:text-lime-400 px-3 py-2 text-sm font-[family-name:var(--font-open-sans)] transition-colors font-bold text-white"
-                                href="/sponsors">Sponsors</a></div>
+                <div class="flex-shrink-0">
+                    <a class="text-2xl font-black text-white font-[family-name:var(--font-montserrat)]" href="/">Jogja<span
+                        class="text-lime-400">{DevDay}</span></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                    <a class="text-white hover:text-lime-400 px-3 py-2 text-sm font-[family-name:var(--font-open-sans)] transition-colors font-bold"
+                        href="/">Home</a><a
+                        class="hover:text-lime-400 px-3 py-2 text-sm font-[family-name:var(--font-open-sans)] transition-colors text-white font-bold"
+                        href="/agenda">Agenda</a><a
+                        class="hover:text-lime-400 px-3 py-2 text-sm font-[family-name:var(--font-open-sans)] transition-colors font-bold text-white"
+                        href="/speakers">Speakers</a><a
+                        class="hover:text-lime-400 px-3 py-2 text-sm font-[family-name:var(--font-open-sans)] transition-colors font-bold text-white"
+                        href="/location">Location</a><a
+                        class="hover:text-lime-400 px-3 py-2 text-sm font-[family-name:var(--font-open-sans)] transition-colors font-bold text-white"
+                        href="/sponsors">Sponsors</a>
                     </div>
-                    <div class="hidden md:block"><a href="/registration-step-1"><button
-                                data-slot="button"
-                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-xs h-9 px-4 py-2 has-[&gt;svg]:px-3 bg-lime-400 hover:bg-lime-300 text-blue-900 font-semibold font-[family-name:var(--font-open-sans)] transition-colors">Register
-                                Now</button></a></div>
-                    <div class="md:hidden"><button data-slot="button"
-                            class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:hover:bg-accent/50 h-8 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5 text-white hover:text-lime-400 hover:bg-white/10"><svg
-                                class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h16"></path>
-                            </svg></button></div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="/registration-step-1"><button data-slot="button"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-xs h-9 px-4 py-2 has-[&gt;svg]:px-3 bg-lime-400 hover:bg-lime-300 text-blue-900 font-semibold font-[family-name:var(--font-open-sans)] transition-colors">
+                        Register Now
+                    </button></a>
+                </div>
+                <div id="burger-menu" class="md:hidden">
+                    <button data-slot="button"
+                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:hover:bg-accent/50 h-8 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5 text-white hover:text-lime-400 hover:bg-white/10">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                    </button>
+                </div>
+                </div>
+                <!-- MOBILE MENU -->
+                <div id="mobile-menu" class="md:hidden xl:hidden" hidden>
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white/10 backdrop-blur-md border-t border-white/20"><a
+                    class="text-white hover:text-lime-400 block px-3 py-2 text-base font-[family-name:var(--font-open-sans)] transition-colors font-bold"
+                    href="/">Home</a><a
+                    class="text-white hover:text-lime-400 block px-3 py-2 text-base font-[family-name:var(--font-open-sans)] transition-colors font-bold"
+                    href="/about">About</a><a
+                    class="text-white hover:text-lime-400 block px-3 py-2 text-base font-[family-name:var(--font-open-sans)] transition-colors font-bold"
+                    href="/agenda">Agenda</a><a
+                    class="text-white hover:text-lime-400 block px-3 py-2 text-base font-[family-name:var(--font-open-sans)] transition-colors font-bold"
+                    href="/speakers">Speakers</a><a
+                    class="text-white hover:text-lime-400 block px-3 py-2 text-base font-[family-name:var(--font-open-sans)] transition-colors font-bold"
+                    href="/location">Location</a><a
+                    class="text-white hover:text-lime-400 block px-3 py-2 text-base font-[family-name:var(--font-open-sans)] transition-colors font-bold"
+                    href="/sponsors">Communities</a><a
+                    class="text-white hover:text-lime-400 block px-3 py-2 text-base font-[family-name:var(--font-open-sans)] transition-colors font-bold"
+                    href="/sponsors">Sponsors</a>
+                    <div class="px-3 py-2"><a href="/registration-step-1"><button data-slot="button"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-xs h-9 px-4 py-2 has-[&gt;svg]:px-3 w-full bg-lime-400 hover:bg-lime-300 text-blue-900 font-semibold font-[family-name:var(--font-open-sans)] transition-colors">Register
+                        Now</button></a></div>
+                </div>
                 </div>
             </div>
         </nav>
